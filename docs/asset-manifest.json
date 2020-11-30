@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.79a166ec.chunk.css",
+    "main.js": "/static/js/main.1dc3b5ac.chunk.js",
+    "main.js.map": "/static/js/main.1dc3b5ac.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.04c735d9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.04c735d9.js.map",
+    "static/js/2.11f0fdd6.chunk.js": "/static/js/2.11f0fdd6.chunk.js",
+    "static/js/2.11f0fdd6.chunk.js.map": "/static/js/2.11f0fdd6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.79a166ec.chunk.css.map": "/static/css/main.79a166ec.chunk.css.map",
+    "static/js/2.11f0fdd6.chunk.js.LICENSE.txt": "/static/js/2.11f0fdd6.chunk.js.LICENSE.txt",
+    "static/media/KV.1a8e815f.png": "/static/media/KV.1a8e815f.png",
+    "static/media/auth.css": "/static/media/background-countertime.1db97ab5.jpg",
+    "static/media/elfo.7dffc4f9.svg": "/static/media/elfo.7dffc4f9.svg",
+    "static/media/molitalia.css": "/static/media/fondoweb.79473ff5.png",
+    "static/media/logo-molitalia.ec0133c1.svg": "/static/media/logo-molitalia.ec0133c1.svg",
+    "static/media/personaje1.3a5f0c4c.svg": "/static/media/personaje1.3a5f0c4c.svg",
+    "static/media/personaje2.0ab58192.svg": "/static/media/personaje2.0ab58192.svg",
+    "static/media/personaje3.33002ca5.svg": "/static/media/personaje3.33002ca5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04c735d9.js",
+    "static/js/2.11f0fdd6.chunk.js",
+    "static/css/main.79a166ec.chunk.css",
+    "static/js/main.1dc3b5ac.chunk.js"
+  ]
+}

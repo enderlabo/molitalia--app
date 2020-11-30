@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@700&family=Rubik:wght@600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.counter__container {
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: ; */
+    /* justify-items: center;
+    align-items: center; */
+    
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Noto Sans JP', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+
+    background-image: url('/src/assets/background-countertime.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.counter__img-logo {
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: start;
+}
+
+.counter__img-logo img {
+    margin-left: 20%;
+}
+
+.counter__img-contain {
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: start;
+
+    margin-top: -5%;
+    
+}
+
+
+.counter__days{
+    grid-column: 1/4;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    
+            
+}
+
+.counter__days p {
+    margin: 0 5%;
+    text-shadow: 0 0 8px #FFF;
+    font-size: 60px;
+    
+}
+
+
+.counter__days-text{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    bottom: 70px;
+    /* margin-left: 40px; */
+}
+
+.counter__days-text p {
+    margin: 0 17%;
+    font-size: 12px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
+}
+
+
+.counter__minutes{
+    justify-self: start;
+    align-self: start;
+}
+
+.counter__border-contain {
+    /* grid-column: 1/4; */
+    /* align-self: center;
+    justify-self: center; */
+    /* display: flex; */
+    position: relative;
+    grid-column: 2/3;
+    
+    
+}
+
+.counter__border-contain img {
+    margin: 0 40px;
+}
+
+.img__border {
+    position: absolute;
+    bottom: 50%;
+    left: 30%;
+
+}
+
+.img__border2 {
+    position: absolute; 
+    bottom: 50%;
+    left: 72%;
+    
+}
+
+.img__border3 {
+    position: absolute;
+    bottom: 50%;
+    right: 70%;
+
+}
+
+.img__character{
+    position: absolute;
+    bottom: 375%;
+    left: 3%;
+
+}
+
+.img__character2{
+    position: absolute;
+    bottom: 455%;
+    left: 87%;
+
+}
+
+.img__character3{
+    position: absolute;
+    bottom: 450%;
+    right: 20.5%;
+
+}
+
+.counter__button {
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: center;
+
+}
+
+/********************************************************
+***********************MEDIA QUERY**********************
+********************************************************
+*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+
+
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .counter__img-contain {
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+        
+    }
+
+    .counter__img-contain img {
+        width: 100px;
+    }
+
+    .counter__border-contain {
+        /* grid-column: 1/4; */
+        /* align-self: center;
+        justify-self: center; */
+        /* display: flex; */
+        position: relative;
+        grid-column: 2/3;
+        
+        
+    }
+    
+    .img__border {
+        position: absolute;
+        width: 80px;
+
+    }
+
+    .img__border2 {
+        position: absolute; 
+        
+        
+    }
+
+    .img__border3 {
+        position: absolute;
+        width: 20px;
+        
+
+    }
+    
+  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .counter__border-contain {
+        position: relative;
+    }
+
+    
+    .counter__img-contain {
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+        
+    }
+
+    .counter__img-contain img {
+        width: 400px;
+    }
+
+    .counter__img-logo img {
+        margin-top: 30%;
+    }
+
+    /* .img__border {
+        position: absolute;
+        width: 40px;
+    }
+    
+    .img__border2 {
+        position: absolute;
+        width: 40px;
+    
+    }
+    
+    .img__border3 {
+        position: absolute;
+        width: 40px;
+    }
+
+    .img__character{
+        position: absolute;
+    
+    }
+    
+    .img__character2{
+        position: absolute;
+    
+    }
+    
+    .img__character3{
+        position: absolute;
+    } */
+
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+}

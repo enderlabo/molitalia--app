@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@700&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth__container {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+    color: #FFF;
+
+    background-image: url('/src/assets/background-countertime.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth__register {
+    grid-column: 1/4;
+    /* align-self: start; */
+    justify-self: center;
+    /* display: flex; */
+    /* margin: 10px 0; */
+    padding: 5px;
+    position: relative;
+
+    bottom: 20%;
+}
+
+.auth__register layout {
+    font-size: 14px;
+    font-weight: lighter;
+    
+}
+
+.auth__register input {
+    padding: 5px;
+    margin: 10px 10px;
+    outline: none;
+    /* width: 100%; */
+}
+
+
+.auth__img-elf {
+    position: absolute;
+    top: 24%;
+    left: 100%;
+
+    cursor: pointer;
+}
+
+.auth__ugly-contain{
+    margin: 10px 0px;
+    border-radius: 15px;
+    width: 450px;
+    height: 37px;
+    background-color: white;
+    transform: perspective(600px)       rotateY(32deg);
+
+}
+
+
+.inputFeo {
+    margin: 0;
+    border: 0;
+}
