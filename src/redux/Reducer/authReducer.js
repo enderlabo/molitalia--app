@@ -1,3 +1,4 @@
+import { types } from "../types/types";
 
 
 /* state
@@ -6,16 +7,19 @@
     lastName: xxx,
 */
 
-import { types } from "../types/types";
+const initialState = {
+    Checking: true
+}
 
-export const authReducer = ( state = {}, action ) => {
+
+export const authReducer = ( state = initialState, action ) => {
 
     switch ( action.type ) {
-        case types.login:
+        case types.authStartLogin:
             return {
-               code: action.payload.code,
-               name: action.payload.name,
-               lastname: action.payload.lastname  
+               rCode: action.payload.rCode,
+               rName: action.payload.rName,
+            //    lastname: action.payload.lastname  
             }
         case types.logOut:
             return { }

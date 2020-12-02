@@ -23,6 +23,10 @@
     height: 100vh;
 }
 
+.auth__container form {
+    margin-bottom: 4%;
+}
+
 .auth__register {
     grid-column: 1/4;
     /* align-self: start; */
@@ -36,7 +40,7 @@
 }
 
 .auth__register layout {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: lighter;
     
 }
@@ -71,4 +75,45 @@
 .inputFeo {
     margin: 0;
     border: 0;
+}
+
+.register__button {
+    grid-column: 2/3;
+    align-self: flex-end;
+    justify-self: center;
+    background-image: url('/src/assets/boton.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 80px;
+    position: relative;
+    bottom: 25px;
+}
+
+.register__button p {
+    margin: 0 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+/*MODAL*/
+
+.ReactModal__Overlay  {
+    background: rgb(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Overlay ReactModal__Overlay--after-open {
+    background: rgb(0, 0, 0, 0.5) !important;
+}
+
+#modal__a {
+    float: inline-end;
+    text-decoration: none;
+    color:  black;
+    border: 2px white solid;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    
 }

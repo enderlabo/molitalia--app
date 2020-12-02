@@ -58,18 +58,16 @@
     position: relative;
     align-items: center;
     justify-content: center;
-
-    
-            
+       
 }
 
 .counter__days p {
     margin: 0 5%;
     text-shadow: 0 0 8px #FFF;
-    font-size: 60px;
+    font-size: 56px;
+    margin-bottom: 10px;
     
 }
-
 
 .counter__days-text{
     grid-column: 2/3;
@@ -79,18 +77,18 @@
 
     position: relative;
 
-    bottom: 70px;
+    bottom: 80px;
     /* margin-left: 40px; */
+    /* margin-bottom: 60px; */
 }
 
 .counter__days-text p {
     margin: 0 17%;
     font-size: 12px;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-bottom: 5%;
     
 }
-
 
 .counter__minutes{
     justify-self: start;
@@ -103,8 +101,7 @@
     justify-self: center; */
     /* display: flex; */
     position: relative;
-    grid-column: 2/3;
-    
+    grid-column: 2/3;  
     
 }
 
@@ -114,50 +111,65 @@
 
 .img__border {
     position: absolute;
-    bottom: 50%;
+    bottom: 80%;
     left: 30%;
 
 }
 
 .img__border2 {
     position: absolute; 
-    bottom: 50%;
-    left: 72%;
+    bottom: 80%;
+    left: 70%;
     
 }
 
 .img__border3 {
     position: absolute;
-    bottom: 50%;
+    bottom: 80%;
     right: 70%;
 
 }
 
 .img__character{
     position: absolute;
-    bottom: 375%;
+    bottom: 430%;
     left: 3%;
 
 }
 
 .img__character2{
     position: absolute;
-    bottom: 455%;
-    left: 87%;
+    bottom: 500%;
+    left: 84%;
 
 }
 
 .img__character3{
     position: absolute;
-    bottom: 450%;
-    right: 20.5%;
+    bottom: 515%;
+    right: 22%;
 
 }
 
 .counter__button {
     grid-column: 1/4;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
+    background-image: url('/src/assets/boton.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 80px;
+    /* margin-top: 40px; */
+    
+
+}
+
+.counter__button p {
+    margin: 0 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    
 
 }
 

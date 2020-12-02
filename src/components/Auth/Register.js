@@ -4,13 +4,17 @@ import { useForm } from "react-hook-form";
 import { useCustomForm } from '../hooks/useForm';
 import Molitalia from '../../assets/logo-molitalia.svg';
 import Logo from '../../assets/KV.png';
-import Elfo from '../../assets/elfo.svg';
+import Elfo from '../../assets/elfo.png';
 import Modal from 'react-modal';
+import ReactPlayer from 'react-player';
+// import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 
-import { login } from '../../redux/actions/authAction';
+
+import { startLogin } from '../../redux/actions/authAction';
 
 import './styles/auth.css';
 import { customModalStyles } from '../../helpers';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -18,9 +22,7 @@ Modal.setAppElement('#root')
 
 export const Register = () => {
 
-  const dispatch = useDispatch();
-  let subtitle;
-
+    const dispatch = useDispatch();
     const [formRegisterValues, handleRegisterChange] = useCustomForm({
         rName: "",
         rLastName: "",
@@ -29,6 +31,7 @@ export const Register = () => {
       });
       const { rName, rLastName, rCode } = formRegisterValues;
       const [modalIsOpen,setIsOpen] = useState(false);
+      const { register, handleSubmit, errors } = useForm();
 
       const openModal = () => {
         setIsOpen(true);
@@ -42,10 +45,10 @@ export const Register = () => {
         setIsOpen(false);
       }
 
-    const onSubmit = (data) => {
-        console.log('Register successfully' + data);
+    const onSubmit = () => {
+        console.log(rName, rCode );
+        dispatch( startLogin( rName, rCode ) );
         openModal();
-        dispatch( login(rCode, rName) );
   
     }
 
@@ -53,7 +56,6 @@ export const Register = () => {
         console.log('login')
     }
 
-    const { register, handleSubmit, errors } = useForm();
     return (
       <div className="auth__container">
           <div className="counter__img-logo">
@@ -66,7 +68,7 @@ export const Register = () => {
 
       <div className="auth__register">
         <form autoComplete="off" onSubmit={handleSubmit(onSubmit)} >
-              <layout>Nombres: </layout>
+           <layout>Nombres: </layout>
           <div className="auth__ugly-contain">
           <input
               type="text"
@@ -77,12 +79,12 @@ export const Register = () => {
               onChange={handleRegisterChange}
               ref={register({ required: true, minLength: 4 })}
           />
-          {errors.rName && errors.rName.type === "required" && (
-              <p> El nombre es requerido. </p>
-          )}
-          {errors.rName && errors.rName.type === "minLength" && (
-              <p> Éste campo requiere un mínimo de 4 carácteres. </p>
-          )}
+            {errors.rName && errors.rName.type === "required" && (
+                <p> El nombre es requerido. </p>
+            )}
+            {errors.rName && errors.rName.type === "minLength" && (
+                <p> Éste campo requiere un mínimo de 4 carácteres. </p>
+            )}
           </div>
           
             <layout>Apellidos: </layout>
@@ -104,7 +106,7 @@ export const Register = () => {
           )}
           </div>
 
-            <layout>Códigos: </layout>
+            <layout>Código: </layout>
           <div className="auth__ugly-contain">
           <input
               type="password"
@@ -152,15 +154,15 @@ export const Register = () => {
         >
  
           {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Bienvenido a Molitalia</h2> */}
-          <button onClick={closeModal}>Cerrar</button>
-          <div>Soy un modal</div>
-          {/* <form>
-            <input />
-            <button>tab navigation</button>
-            <button>stays</button>
-            <button>inside</button>
-            <button>the modal</button>
-          </form> */}
+          <NavLink id="modal__a" exact to="/mapa" onClick={closeModal}>X</NavLink>
+         <ReactPlayer 
+          width="400px"
+          height="300px"
+          controls
+          url="https://www.youtube.com/watch?v=AG7RHHi8GME"
+         >
+
+         </ReactPlayer>
         </Modal>
 
           <div className="auth__img-elf">
@@ -169,6 +171,10 @@ export const Register = () => {
               />
           </div>
       </div>
+
+      <div className="register__button">
+          <p href="/registro" >Aceptar</p>
+        </div>
 
       </div>
     )

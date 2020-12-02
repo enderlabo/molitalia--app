@@ -2,14 +2,14 @@ import { types } from "../types/types"
 
 
 
-export const login = ( code, name, lastname ) => {
+export const startLogin = ( rCode, rName ) => {
 
     return {
-        type: types.login,
+        type: types.authStartLogin,
         payload: {
-            code,
-            name,
-            lastname
+            rCode,
+            rName,
+            
         }
     }
 }

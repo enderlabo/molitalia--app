@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Logo from '../../assets/KV.png';
 import Esfera from '../../assets/esfera.png';
-import Pinguino from '../../assets/personaje1.svg';
-import Elfo from '../../assets/personaje2.svg';
-import Reno from '../../assets/personaje3.svg';
-import Molitalia from '../../assets/logo-molitalia.svg';
+import Pinguino from '../../assets/personaje1.png';
+import Elfo from '../../assets/personaje2.png';
+import Reno from '../../assets/personaje3.png';
+import Molitalia from '../../assets/logo-molitalia.png';
 
 import './styles/counter.css';
+import { NavLink } from 'react-router-dom';
 
 const Counter = () => {
 
@@ -55,26 +56,35 @@ const Counter = () => {
         </div>
 
         <div className="counter__img-contain">
-           <img src={Logo} alt="LOGO" width="550" height="350" />
+           <img src={Logo} alt="LOGO" width="550" height="300" />
         </div>
 
         <div className="counter__days">
-          <p>{days}</p>
-            <p>{hours}</p>
-          <p>{minutes}</p>
+        
+            <p>{days}</p>
+
+          
+        
+            <p id="hours">{hours}</p>
+
+          
+        
+            <p>{minutes}</p>
+
+          
         </div>
 
         <div className="counter__border-contain">
             <div className="img__border">
-              <img src={ Esfera } alt="ESFERA" width="110" />
+              <img src={ Esfera } alt="ESFERA" width="100" />
             </div>
 
             <div className="img__border2">
-              <img src={ Esfera } alt="ESFERA" width="110" />
+              <img src={ Esfera } alt="ESFERA" width="100" />
             </div>
 
             <div className="img__border3">
-              <img src={ Esfera } alt="ESFERA" width="110" />
+              <img src={ Esfera } alt="ESFERA" width="100" />
             </div>
 
             <div className="img__character">
@@ -95,7 +105,7 @@ const Counter = () => {
         </div>
 
         <div className="counter__button">
-          <button>Registro</button>
+          <p href="/registro" >Registro</p>
         </div>
        
       </div>

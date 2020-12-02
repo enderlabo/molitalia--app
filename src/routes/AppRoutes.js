@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import  Counter from '../components/Counter/Counter';
 import { Register } from '../components/Auth/Register';
 import { Molitalia } from '../components/Home/Molitalia';
-import { login } from '../redux/actions/authAction';
+import { startLogin } from '../redux/actions/authAction';
 
 
 export const AppRoutes= () => {
@@ -19,7 +19,7 @@ export const AppRoutes= () => {
   useEffect( () => {
 
     if( code?.length >= 0 ) {
-      dispatch( login( code, name ) );
+      // dispatch( startLogin( rCode, rName ) );
       setisLoggedIn( true );
     } else {
       setisLoggedIn( false )
