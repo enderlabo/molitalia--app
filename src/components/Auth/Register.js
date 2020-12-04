@@ -173,8 +173,8 @@ export const Register = () => {
       </div>
 
       <div className="register__button">
-          <p href="/registro" >Aceptar</p>
-        </div>
+        <p href="/registro" >Aceptar</p>
+      </div>
 
       </div>
     )

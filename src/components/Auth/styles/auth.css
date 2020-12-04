@@ -55,17 +55,17 @@
 
 .auth__img-elf {
     position: absolute;
-    top: 24%;
+    top: 42%;
     left: 100%;
 
-    cursor: pointer;
+    
 }
 
 .auth__ugly-contain{
     margin: 10px 0px;
     border-radius: 15px;
     width: 450px;
-    height: 37px;
+    height: 45px;
     background-color: white;
     transform: perspective(600px)       rotateY(32deg);
 
@@ -86,7 +86,7 @@
     width: 250px;
     height: 80px;
     position: relative;
-    bottom: 25px;
+    bottom: 55px;
 }
 
 .register__button p {
@@ -117,3 +117,55 @@
     margin-bottom: 5px;
     
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .counter__img-contain img {
+        width: 350px;
+    }
+
+    .auth__img-elf img {
+        display: none;
+    }
+
+
+    .auth__ugly-contain {
+        margin: 10px 0px;
+        border-radius: 15px;
+        width: 340px;
+        height: 45px;
+        background-color: white;
+        transform: perspective(600px) rotateY(32deg);
+    }
+
+    .register__button {
+        grid-column: 2/3;
+        align-self: flex-end;
+        justify-self: center;
+        width: 250px;
+        height: 80px;
+        position: relative;
+        bottom: 55px;
+        right: 45px;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .counter__img-contain img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .auth__img-elf {
+        position: absolute;
+        top: 30%;
+        left: 90%;
+    }
+
+    .register__button {
+        position: relative;
+        bottom: 90px;
+        left: 55px;
+    }
+ }

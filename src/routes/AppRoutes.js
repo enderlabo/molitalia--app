@@ -25,7 +25,7 @@ export const AppRoutes= () => {
       setisLoggedIn( false )
     }
 
-  }, setisLoggedIn)
+  }, )
 
     return (
       <div>

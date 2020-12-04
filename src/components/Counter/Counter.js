@@ -88,7 +88,7 @@ const Counter = () => {
             </div>
 
             <div className="img__character">
-              <img src={ Pinguino }  alt="Pinguino" width="70" />
+              <img alt="Pinguino" src={ Pinguino }  width="80" />
             </div>
             <div className="img__character2">
               <img alt="Elfo" src={ Elfo } width="80" />

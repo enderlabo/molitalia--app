@@ -196,7 +196,7 @@
 
 .molitalia__yellowGuy {
     position: relative;
-    grid-columns: 3/4;
+    grid-column: 3/4;
     grid-row: 3/4;
 }
 
@@ -216,4 +216,109 @@
     position: absolute;
     top:80%;
     left: 70%;
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media   (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+   
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .auth__container {
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        background-image: url('/src/assets/mapaMobile.png') !important;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 100vw;
+        height: 99.9vh; */
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+   @media (min-width: 320px) and (max-width: 480px) { 
+
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('/src/assets/mapaMobile.png') !important;
+    }
+
+    .auth__container {
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        
+        /* background-image: url('/src/assets/mapaMobile.png') !important; */
+        background-image: none;
+        background-position: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 100vw;
+        height: 99.9vh; */
+    }
+    
+    /* CSS */
+    
+  }
 }
