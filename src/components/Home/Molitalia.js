@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../../assets/KV.png';
 import Logo2 from '../../assets/logo-molitalia.png';
 import WhiteToy from '../../assets/PNG/Recurso 15.png';
@@ -22,16 +22,39 @@ import Guy from '../../assets/PNG/Recurso 17.png';
 import Guy2 from '../../assets/PNG/niña.png';
 import Fanny from '../../assets/PNG/Fanny.png'; 
 
+import Modal from 'react-modal';
+import { NavLink } from 'react-router-dom';
+import ReactPlayer from 'react-player';
+import { customModalStyles } from '../../helpers';
+
 
 import './styles/molitalia.css';
-import { NavLink } from 'react-router-dom';
+
+Modal.setAppElement('#root')
 
 export const Molitalia = () => {
+
+    const [modalIsOpen,setIsOpen] = useState(true);
+    const openModal = () => {
+        setIsOpen(true);
+      }
+     
+      const afterOpenModal = () => {
+        // references are now sync'd and can be accessed.
+      }
+     
+      const closeModal = () => {
+        setIsOpen(false);
+      }
 
     const url = () =>{
     
        window.location.href = "https://appstouchperu.com/Apps/Molitalia/";
     } 
+
+    useEffect( () => {
+
+    })
         
     return (
         <div className="map__contain">
@@ -137,7 +160,25 @@ export const Molitalia = () => {
                     <img alt="LOGO" src={ Guy2 } width="80" />
                 </div>
             </div>
+            <Modal
+                isOpen={modalIsOpen}
+                onAfterOpen={afterOpenModal}
+                onRequestClose={closeModal}
+                style={customModalStyles}
+                contentLabel="Example Modal"
+        >
+ 
+          {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Bienvenido a Molitalia</h2> */}
+          <NavLink id="modal__a" exact to="/mapa" onClick={closeModal}>X</NavLink>
+         <ReactPlayer 
+            width="400px"
+            height="300px"
+            controls
+            url="https://www.youtube.com/watch?v=MHzcnhDPkKc"
+         >
 
+         </ReactPlayer>
+        </Modal>
         </div>
     )
 }

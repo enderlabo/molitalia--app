@@ -62,7 +62,7 @@
 }
 
 .auth__ugly-contain{
-    margin: 10px 0px;
+    margin: 5px 0px;
     border-radius: 15px;
     width: 450px;
     height: 45px;
@@ -87,6 +87,7 @@
     height: 80px;
     position: relative;
     bottom: 55px;
+    display: flex;
 }
 
 .register__button p {
@@ -94,7 +95,21 @@
     font-size: 22px;
     margin-top: 10px;
     cursor: pointer;
+    
+}
 
+.register__button a {
+    margin: 0 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.register__button a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 /*MODAL*/

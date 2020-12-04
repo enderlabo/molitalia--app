@@ -105,7 +105,7 @@ const Counter = () => {
         </div>
 
         <div className="counter__button">
-          <p href="/registro" >Registro</p>
+          <NavLink exact to="/registro" >Registro</NavLink>
         </div>
        
       </div>

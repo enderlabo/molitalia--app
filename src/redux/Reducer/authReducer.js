@@ -15,14 +15,13 @@ const initialState = {
 export const authReducer = ( state = initialState, action ) => {
 
     switch ( action.type ) {
-        case types.authStartLogin:
-            return {
-               rCode: action.payload.rCode,
-               rName: action.payload.rName,
-            //    lastname: action.payload.lastname  
-            }
-        case types.logOut:
-            return { }
+        // case types.authStartLogin:
+        //     return {
+              
+        //     //    lastname: action.payload.lastname  
+        //     }
+        // case types.logOut:
+        //     return { }
         
     
         default:
