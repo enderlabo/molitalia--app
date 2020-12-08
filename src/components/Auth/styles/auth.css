@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+JP:wght@700&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth__container {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+    color: #FFF;
+
+    background-image: url('/src/assets/background-countertime.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth__container form {
+    margin-bottom: 4%;
+}
+
+.auth__register {
+    grid-column: 1/4;
+    /* align-self: start; */
+    justify-self: center;
+    /* display: flex; */
+    /* margin: 10px 0; */
+    padding: 5px;
+    position: relative;
+
+    bottom: 20%;
+}
+
+.auth__register layout {
+    font-size: 16px;
+    font-weight: lighter;
+    
+}
+
+.auth__register input {
+    padding: 5px;
+    margin: 10px 10px;
+    outline: none;
+    /* width: 100%; */
+}
+
+
+.auth__img-elf {
+    position: absolute;
+    top: 42%;
+    left: 100%;
+
+    
+}
+
+.auth__ugly-contain{
+    margin: 5px 0px;
+    border-radius: 15px;
+    width: 450px;
+    height: 45px;
+    background-color: white;
+    transform: perspective(600px)       rotateY(32deg);
+
+}
+
+
+.inputFeo {
+    margin: 0;
+    border: 0;
+}
+
+.register__button {
+    grid-column: 2/3;
+    align-self: flex-end;
+    justify-self: center;
+    background-image: url('/src/assets/boton.png');
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 80px;
+    position: relative;
+    bottom: 55px;
+    display: flex;
+}
+
+.register__button p {
+    margin: 0 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+.register__button a {
+    margin: 0 20px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.register__button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/*MODAL*/
+
+.ReactModal__Overlay  {
+    background: rgb(0, 0, 0, 0.5) !important;
+}
+
+.ReactModal__Overlay ReactModal__Overlay--after-open {
+    background: rgb(0, 0, 0, 0.5) !important;
+}
+
+#modal__a {
+    float: inline-end;
+    text-decoration: none;
+    color:  black;
+    border: 2px white solid;
+    padding: 2px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .counter__img-contain img {
+        width: 350px;
+    }
+
+    .auth__img-elf img {
+        display: none;
+    }
+
+
+    .auth__ugly-contain {
+        margin: 10px 0px;
+        border-radius: 15px;
+        width: 340px;
+        height: 45px;
+        background-color: white;
+        transform: perspective(600px) rotateY(32deg);
+    }
+
+    .register__button {
+        grid-column: 2/3;
+        align-self: flex-end;
+        justify-self: center;
+        width: 250px;
+        height: 80px;
+        position: relative;
+        bottom: 55px;
+        right: 45px;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .counter__img-contain img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .auth__img-elf {
+        position: absolute;
+        top: 30%;
+        left: 90%;
+    }
+
+    .register__button {
+        position: relative;
+        bottom: 90px;
+        left: 55px;
+    }
+ }
