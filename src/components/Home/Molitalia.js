@@ -52,7 +52,7 @@ export const Molitalia = () => {
 
     const url = () =>{
     
-       window.location.href = "https://appstouchperu.com/Apps/Molitalia/";
+       window.open("https://appstouchperu.com/Apps/Molitalia/", "_blank");
     } 
 
     useEffect( () => {
@@ -178,6 +178,8 @@ export const Molitalia = () => {
             width="850px"
             height="550px"
             src={ Video }
+            onPlay="true"
+            autoplay="true"
          />
         </Modal>
         </div>
