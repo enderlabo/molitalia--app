@@ -59,15 +59,19 @@
 
 .img__whiteToy{
     position: absolute;
-    left: 32%;
-    top: 15%;
+    left: 27%;
+    top: 10%;
 
 }
 
 .img__redBanner {
     position: absolute;
     left: 65%;
-    top: 25%;
+    top: 15%;
+}
+
+.img__redBanner img {
+    width: 130px;
 }
 
 
@@ -442,8 +446,8 @@
     }
     .img__2-4 {
         position: absolute;
-        left: 155px;
-        bottom: 90px;
+        left: -310px;
+        top: -85px;
     }
     .img__2-4 img {
         height: 100px;
@@ -728,8 +732,8 @@
     }
     .img__2-4 {
         position: absolute;
-        left: 155px;
-        top: 30px;
+        left: -310px;
+        top: -50px;
     }
     .img__2-4 img {
         height: 100px;
@@ -782,8 +786,8 @@
 
     .img__yellowGuy {
         position: absolute;
-        top: 85px;
-        left: -205px;
+        top: 90px;
+        left: -220px;
     }
     .img__yellowGuy img {
         width: 70px;
@@ -833,8 +837,8 @@
 
     .img__fanny {
         position: absolute;
-        top: 383px;
-        left: 160px;
+        top: 360px;
+        left: 165px;
     }
     .img__fanny img {
         width: 50px;
