@@ -309,7 +309,7 @@
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    .auth__container {
+    .map__contain {
         display: grid;
     
         grid-template-columns: 1fr 1fr;
@@ -331,13 +331,6 @@
   */
   
    @media (min-width: 320px) and (max-width: 480px) { 
-
-    
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
     
     .map__contain {
@@ -464,3 +457,4 @@
     /* CSS */
     
   }
+  

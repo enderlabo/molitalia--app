@@ -10,6 +10,7 @@
     display: grid;
     
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Noto Sans JP', sans-serif; */
     /* font-family: 'Rubik', sans-serif; */
@@ -23,16 +24,34 @@
     height: 100vh;
 }
 
+.auth__img-contain {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+
+    position: relative;
+    right: 220px;
+    top: -50px;
+}
+
+.auth__img-contain img {
+    width: 500px;
+    height: 350px;
+}
+
 .auth__container form {
-    margin-bottom: 4%;
+    margin-top: -16%;
+    margin-left: 80px;
+    font-size: 14px;
 }
 
 .auth__register {
     grid-column: 1/4;
-    /* align-self: start; */
+    align-self: start;
     justify-self: center;
-    /* display: flex; */
-    /* margin: 10px 0; */
+    display: flex;
+    margin: 10px 0;
     padding: 5px;
     position: relative;
 
@@ -53,12 +72,16 @@
 }
 
 
-.auth__img-elf {
-    position: absolute;
-    top: 42%;
-    left: 100%;
-
+.auth__img-elf2 {
     
+    position: absolute;
+    top: -18px;
+    left: 535px;
+}
+
+.auth__img-elf2 img {
+    height: 200px;
+    width: 200px;
 }
 
 .auth__ugly-contain{
@@ -86,7 +109,8 @@
     width: 250px;
     height: 80px;
     position: relative;
-    bottom: 55px;
+    bottom: 35px;
+    left: 35px;
     display: flex;
 }
 
@@ -133,54 +157,255 @@
     
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+/* @media (min-width: 1366px) {
 
-    .counter__img-contain img {
+    .auth__img-contain {
+        margin-top: -50px;
+    }
+    .auth__img-contain img {
+        width: 550px !important;
+        height: 300px !important;
+        /* margin-top: 25px; */
+    /* }
+
+    .auth__img-elf {
+        top: 41% !important;
+        left: 130%;
+    }
+
+    .auth__container form {
+        margin-bottom: 41% !important;
+        margin-left: -15% !important;
+    }
+
+
+
+    .register__button {
+        top: -165px !important;
+    } */
+/* }  */
+
+
+
+/* @media ( min-width: 768px ) {
+
+    .auth__img-contain img {
+        width: 600px;
+        height: 450px;
+    }
+
+    .auth__img-elf {
+        top: 54%;
+        left: 135%;
+    }
+    .auth__img-elf img {
+        width: 180px;
+    }
+
+    .auth__container form {
+        margin-bottom: -5%;
+    }
+
+    .auth__register {
+        margin-right: 150px;
+    }
+
+    .register__button {
+        top: -80px;
+        left: 70px;
+    }
+} */
+
+@media (min-width: 375px) and (min-height: 667px)  {
+
+
+    .auth__img-contain {
+        margin-left: 0px;
+        grid-column: 1/3;
+        position: relative;
+        right: 20px;
+    }
+
+    .auth__img-contain img {
         width: 350px;
+        height: 250px;
     }
 
     .auth__img-elf img {
         display: none;
     }
 
+    .auth__register {
+        width: 200px;
+
+    }
+
+    .auth__img-elf2 {
+        display: none;
+    }
 
     .auth__ugly-contain {
-        margin: 10px 0px;
-        border-radius: 15px;
-        width: 340px;
-        height: 45px;
-        background-color: white;
-        transform: perspective(600px) rotateY(32deg);
+        width: 300px;
+    }
+
+    .auth__container form {
+        margin-bottom: -5%;
+        width: 300px;
+        margin-left: -60px;
     }
 
     .register__button {
+        bottom: 25px;
+        right: 55px;
+    }
+
+
+}
+
+@media (min-width: 375px) and ( min-height:812px ) {
+
+    .auth__img-contain {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        position: relative;
+        top: -125px;
+        
+    }
+
+    .auth__img-contain img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .auth__img-elf img {
+        display: none;
+    }
+
+    .auth__img-elf2 {
+        display: none;
+    }
+
+    .auth__register {
+        width: 200px;
+
+    }
+
+    .auth__ugly-contain {
+        width: 350px;
+    }
+
+    .auth__container form {
+        margin-bottom: -5%;
+        width: 300px;
+        margin-left: -60px;
+        position: relative;
+        top: -60px;
+    }
+
+    .register__button {
+        bottom: 50px;
+        right: 50px;
+    }
+
+}
+
+@media (min-width: 414px) and (min-height: 736px)  {
+
+
+    .auth__img-contain {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        position: relative;
+        top: -95px;
+        left: 5px;
+        
+    }
+
+    .auth__img-contain img {
+        width: 400px;
+        height: 250px;
+    }
+
+    .auth__img-elf img {
+        display: none;
+    }
+
+    .auth__img-elf2 {
+        display: none;
+    }
+    
+
+    .auth__register {
+        width: 200px;
+
+    }
+
+    .auth__ugly-contain {
+        width: 350px;
+    }
+
+    .auth__container form {
+        margin-bottom: -5%;
+        width: 300px;
+        margin-left: -60px;
+        position: relative;
+        top: -60px;
+    }
+
+    .register__button {
+        bottom: 35px;
+        right: 40px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (min-height: 1024px) { 
+
+    .auth__img-contain {
         grid-column: 2/3;
-        align-self: flex-end;
-        justify-self: center;
-        width: 250px;
-        height: 80px;
+        grid-row: 1/3;
         position: relative;
-        bottom: 55px;
-        right: 45px;
+        top: 80px;
+        right: 20px;
+        
     }
- }
 
- @media (min-width: 768px) and (max-width: 991.98px) {
-
-    .counter__img-contain img {
+    .auth__img-contain img {
         width: 500px;
-        height: 400px;
+        height: 350px;
     }
 
-    .auth__img-elf {
-        position: absolute;
-        top: 30%;
-        left: 90%;
+    .auth__img-elf2 {
+        position: relative;
+        top: 93px;
+        left: 90px;
+    }
+
+    .auth__img-elf2 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .auth__register {
+        width: 200px;
+
+    }
+
+    .auth__ugly-contain {
+        width: 400px;
+    }
+
+    .auth__container form {
+        margin-bottom: -5%;
+        width: 300px;
+        margin-left: -95px;
+        position: relative;
+        top: -50px;
     }
 
     .register__button {
-        position: relative;
-        bottom: 90px;
-        left: 55px;
+        bottom: 80px;
+        left: 30px;
     }
- }
+}

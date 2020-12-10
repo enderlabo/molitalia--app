@@ -47,7 +47,7 @@
     justify-self: center;
     align-self: start;
 
-    margin-top: -5%;
+    margin-top: 0%;
     
 }
 
@@ -77,13 +77,13 @@
 
     position: relative;
 
-    bottom: 80px;
+    bottom: 55px;
     /* margin-left: 40px; */
     /* margin-bottom: 60px; */
 }
 
 .counter__days-text p {
-    margin: 0 17%;
+    margin: 0 15%;
     font-size: 12px;
     margin-top: 12%;
     margin-bottom: 5%;
@@ -118,36 +118,36 @@
 
 .img__border2 {
     position: absolute; 
-    bottom: 80%;
+    bottom: 0px;
     left: 70%;
     
 }
 
 .img__border3 {
     position: absolute;
-    bottom: 80%;
-    right: 70%;
+    bottom: 0px;
+    right: 315px;
 
 }
 
 .img__character{
     position: absolute;
-    bottom: 430%;
-    left: 3%;
+    bottom: 55px;
+    left: 15px;
 
 }
 
 .img__character2{
     position: absolute;
-    bottom: 500%;
-    left: 84%;
+    bottom: 80px;
+    left: 380px;
 
 }
 
 .img__character3{
     position: absolute;
-    bottom: 515%;
-    right: 22%;
+    bottom: 80px;
+    right: 105px;
 
 }
 
@@ -159,8 +159,10 @@
     background-repeat: no-repeat;
     width: 250px;
     height: 80px;
-    /* margin-top: 40px; */
+    margin-top: -55px;
     display: flex;
+    position: relative;
+    left: 40px;
     
 
 }
@@ -182,302 +184,285 @@
 ***********************MEDIA QUERY**********************
 ********************************************************
 */
-@media (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 1366px) and (min-height: 768px) {
 
-    .counter__days-text {
-        grid-column: 2/3;
-        display: flex;
-        align-items: center;
-        justify-content: center !important;
-        position: relative;
-        bottom: 20px;
-        margin-left: -35px !important;
-        margin-bottom: 60px;
+    .counter__img-contain {
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+    
+        margin-bottom: 20px;
+        margin-top: -30px;
+        
+    }
+    .counter__img-contain img {
+        width: 550px;
+        height: 300px;
+        
     }
 
     .counter__days p {
-        margin: 0 30px !important;
+        margin: 0 6%;
         text-shadow: 0 0 8px #FFF;
-        font-size: 36px !important;
+        font-size: 56px;
         margin-bottom: 10px;
         
     }
 
-    .counter__days-text p {
-        margin: 0 20% !important;
-        font-size: 12px;
-        margin-top: 12%;
-        margin-bottom: 5%;
-    }
-
-    .img__character {
+    .img__character{
         position: absolute;
-        bottom: 65px !important;
-        left: -100px !important;
-    }
-
-    .img__character img {
-        height: 80px !important;
-        width: auto !important;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 77px !important;
-        left: -10px !important;
-    }
-    .img__character3 img {
-        height: 80px !important;
-        width: auto;
+        bottom: 52px;
+        left: -12px;
     }
 
     .img__character2 {
         position: absolute;
-        bottom: 80px !important;
-        left:  90px !important;
+        bottom: 75px;
+        left: 87%;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 75px;
+        left: 183px;
     }
 
     .img__border3 {
         position: absolute;
-        bottom: 20px !important;
-        right: 100px !important;
-    }
-
-    .img__border3 img {
-        height: 80px;
-        width: auto !important;
-    }
-
-    .img__border2 {
-        position: absolute;
-        bottom: 20px !important;
-        left: -45px !important;
-    }
-
-    .img__border2 img {
-        height: 80px;
-        width: auto !important;
-    }
-     
-    .img__border {
-        position: absolute;
-        bottom: 20px !important;
-        left: 60px !important;
-    }
-
-    .img__border img {
-      
-        height: 80px;
-        width: auto !important;
-    
-    }
-
-    .counter__button {
-        position: relative !important;
-        left: 40px !important;
-        top: -25px !important;
+        bottom: 15px;
+        right: 310px;
+        
     }
     
 
-}
+    .img__border2{
+        position: absolute;
+        bottom: 15px;
+        left: 340px;
+    }
 
-@media (min-width: 375px) and (max-width: 480px) {
+    .img__border{
+        position: absolute;
+        bottom: 15px;
+        left: -15%;
+        
+
+    }
 
     .counter__days-text {
         grid-column: 2/3;
         display: flex;
         align-items: center;
-        justify-content: center !important;
+        justify-content: center;
         position: relative;
-        bottom: 20px;
-        margin-left: -35px !important;
-        margin-bottom: 60px;
+        bottom: 40px;
+    }
+
+    .counter__days-text p {
+        margin: 0px 17%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 12px;
+        margin-top: 6%;
+        margin-bottom: 140px;
+    }
+
+    .counter__button {
+        position: relative;
+        bottom: 150px;
+
+    }
+
+} 
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) and (min-height: 768px) {
+
+    .counter__img-contain {
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+    
+        margin-bottom: 20px;
+        margin-top: -30px;
+        
+    }
+    .counter__img-contain img {
+        width: 550px;
+        height: 250px;
+        margin-top: 20px;
     }
 
     .counter__days p {
-        margin: 0 30px !important;
+        margin: 0 5%;
         text-shadow: 0 0 8px #FFF;
-        font-size: 36px !important;
-        margin-bottom: 200px !important;
+        font-size: 56px;
+        margin-bottom: 40px;
         
     }
-    
 
-    .counter__days-text p {
-        margin: 0 20% !important;
-        font-size: 12px;
-        margin-top: -220% !important;
-        margin-bottom: 10% !important;
-    }
-
-    .img__character {
+    .img__character{
         position: absolute;
-        bottom: 245px !important;
-        left: -100px !important;
-    }
-
-    .img__character img {
-        height: 80px !important;
-        width: auto !important;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 258px !important;
-        left: -10px !important;
-    }
-    .img__character3 img {
-        height: 80px !important;
-        width: auto;
+        bottom: 80px;
+        left: 0px;
     }
 
     .img__character2 {
         position: absolute;
-        bottom: 255px !important;
-        left:  100px !important;
+        bottom: 105px;
+        left: 84%;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 105px;
+        left: 155px;
     }
 
     .img__border3 {
         position: absolute;
-        bottom: 200px !important;
-        right: 100px !important;
+        bottom: 45px;
+        right: 280px;
+        
     }
-
-    .img__border3 img {
-        height: 80px;
-        width: auto !important;
-    }
-
-    .img__border2 {
-        position: absolute;
-        bottom: 200px !important;
-        left: -45px !important;
-    }
-
-    .img__border2 img {
-        height: 80px;
-        width: auto !important;
-    }
-     
-    .img__border {
-        position: absolute;
-        bottom: 200px !important;
-        left: 60px !important;
-    }
-
-    .img__border img {
-      
-        height: 80px;
-        width: auto !important;
     
+
+    .img__border2{
+        position: absolute;
+        bottom: 45px;
+        left: 275px;
+        
+
+    }
+
+    .img__border{
+        position: absolute;
+        bottom: 45px;
+        left: 25%;
+        
+
+    }
+
+    .counter__days-text {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .counter__days-text p {
+        margin: 0px 17%;
+        font-size: 12px;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
 
     .counter__button {
-        position: relative !important;
-        left: 40px !important;
-        top: -50px !important;
+        position: relative;
+        bottom: 35px;
+
     }
+
 }
-@media (min-width: 414px) and (max-width: 480px) {
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+
+
+    .counter__img-contain {
+        grid-column: 1/4;
+        justify-self: center;
+        align-self: start;
+    
+        margin-bottom: 20px;
+        margin-top: -30px;
+        
+    }
 
     .counter__img-contain img {
-        height: 260px !important;
+        margin-bottom: -70px;
+        width: 550px;
+        height: 350px;
+    }
+
+    .counter__days p {
+        margin: 0 6.5%;
+        text-shadow: 0 0 8px #FFF;
+        font-size: 56px;
+        margin-bottom: 10px;
+        
+    }
+
+    .img__character{
+        position: absolute;
+        bottom: 100px;
+        left: -50px;
+    }
+
+    .img__character2 {
+        position: absolute;
+        bottom: 130px;
+        left: 95%;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 125px;
+        left: 120px;
+    }
+
+    .img__border3 {
+        position: absolute;
+        bottom: 65px;
+        right: 260px;
+        
+    }
+    
+
+    .img__border2{
+        position: absolute;
+        bottom: 65px;
+        left: 260px;
+        
+
+    }
+
+    .img__border{
+        position: absolute;
+        bottom: 65px;
+        left: 20%;
     }
 
     .counter__days-text {
         grid-column: 2/3;
         display: flex;
         align-items: center;
-        justify-content: center !important;
+        justify-content: center;
         position: relative;
-        bottom: 65px !important;
-        margin-left: -35px !important;
-        margin-bottom: 60px;
-    }
-
-    .counter__days p {
-        margin: 0 45px !important;
-        text-shadow: 0 0 8px #FFF;
-        font-size: 36px !important;
-        margin-bottom: 10px !important;
-        margin-top: -50px !important;
-        
+        bottom: 60px;
     }
 
     .counter__days-text p {
-        margin: 0 20% !important;
+        margin: 0px 23%;
+        margin-top: 0px;
+        margin-bottom: 0px;
         font-size: 12px;
-        margin-top: 12%;
-        margin-bottom: 10% !important;
+        margin-top: -5%;
+        margin-bottom: 0%;
     }
 
-    .img__character {
-        position: absolute;
-        bottom: 105px !important;
-        left: -100px !important;
-    }
+    .counter__button {
+        position: relative;
+        bottom: 40px;
 
-    .img__character img {
-        height: 80px !important;
     }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 118px !important;
-        left: 10px !important;
-    }
-    .img__character3 img {
-        height: 80px !important;
-        width: auto;
-    }
-
-    .img__character2 {
-        position: absolute;
-        bottom: 117px !important;
-        left: 130px !important;
-    }
-    .img__character2 img {
-        height: 80px !important;
-    }
-
-    .img__border3 {
-        position: absolute;
-        bottom: 60px !important;
-        right: 120px !important;  
-    }
-
-    .img__border3 img {
-        height: 80px;
-        width: auto !important;
-    }
-
-    .img__border2 {
-        position: absolute;
-        bottom: 60px !important;
-        left: -25px !important;
-    }
-
-    .img__border2 img {
-        height: 80px;
-        width: auto !important;
-    }
-     
-    .img__border {
-        position: absolute;
-        bottom: 60px !important;
-        left: 95px !important;
-    }
-
-    .img__border img {
-      
-        height: 80px;
-        width: auto !important;
     
-    }
-
 }
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) 
 
     .counter__days-text {
         grid-column: 2/3;
@@ -558,74 +543,10 @@
     .img__border img {
         height: 80px;
     }
-
-
- }
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-    .counter__img-contain {
-        grid-column: 1/4;
-        justify-self: center;
-        align-self: start;
-        
-    }
-    .counter__days p {
-        margin: 5px;
-        text-shadow: 0 0 8px #FFF;
-        font-size: 46px;
-        margin-bottom: 10px;
-        
-    }
-
-    .counter__days-text p {
-        margin: 0 32%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 12px;
-        margin-top: 13%;
-        margin-bottom: 5%;
-    }
-
-    .counter__img-contain img {
-        width: 100px;
-    }
-
-    .counter__border-contain {
-        /* grid-column: 1/4; */
-        /* align-self: center;
-        justify-self: center; */
-        /* display: flex; */
-        position: relative;
-        grid-column: 2/3;
-        
-    }
-
-    
-    .img__border {
-        position: absolute;
-        width: 80px;
-
-    }
-
-    .img__border2 {
-        position: absolute; 
-        
-        
-    }
-
-    .img__border3 {
-        position: absolute;
-        width: 20px;
-        
-
-    }
-    
-  }
+ */
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 768px) and (min-height: 1024px) {
 
     .counter__days p {
         margin: 0 10%;
@@ -633,6 +554,10 @@
         font-size: 46px;
         margin-bottom: 10px;
         
+    }
+
+    .counter__days-text p {
+        margin-top: 13%;
     }
 
     .counter__img-contain {
@@ -643,40 +568,41 @@
     .counter__img-contain img {
         width: 400px;
         height: 250px;
+        margin-top: 25px;
     }
 
     .img__character2 {
         position: absolute;
-        bottom: 85px;
+        bottom: 70px;
         left: 287px;
     }
 
     .img__character2 img {
-        width: 80px !important;
+        width: 80px;
     }
 
     .img__character3 {
         position: absolute;
-        bottom: 85px;
-        left: 85px;
+        bottom: 67px;
+        left: 88px;
     }
     .img__character3 img {
-        width: 80px !important;
+        width: 80px;
     }
 
     .img__character {
         position: absolute;
-        bottom: 61px;
-        left: -105px;
+        bottom: 45px;
+        left: -90px;
     }
 
     .img__character img {
-        width: 75px !important;
+        width: 75px;
     }
 
     .img__border2 {
         position: absolute;
-        bottom: 25px;
+        bottom: 10px;
         left: 230px;
     }
 
@@ -686,8 +612,8 @@
 
     .img__border {
         position: absolute;
-        bottom: 25px;
-        left: 30px;  
+        bottom: 10px;
+        left: -150px; 
 
     }
 
@@ -697,8 +623,8 @@
 
     .img__border3 {
         position: absolute;
-        bottom: 25px;
-        right: 240px;
+        bottom: 10px;
+        right: 45px;
     }
 
     .img__border3 img {
@@ -721,97 +647,125 @@
             margin-top: 0px;
             margin-bottom: 0px;
         font-size: 12px;
-        margin-top: 5%;
+        margin-top: 13%;
         margin-bottom: 100%;
     }
 
     .counter__button {
         position: relative;
-        bottom: 85px;
+        bottom: 230px;
         left: 40px;
     }
 
-  }
+}
 /* KINDLE FIRE HD 800X1280*/
-@media ( min-width: 800px ) {
+@media screen and (min-width: 414px) and (min-height: 736px) {
+
+    .counter__img-contain img {
+        width: 450px;
+        height: 260px;
+        margin-bottom: 20px;
+    }
+
+    .counter__days-text {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 65px;
+        margin-left: -35px;
+        margin-bottom: 60px;
+    }
 
     .counter__days p {
-        margin: 0 10%;
+        margin: 0 45px;
         text-shadow: 0 0 8px #FFF;
-        font-size: 48px;
+        font-size: 36px;
         margin-bottom: 10px;
+        margin-top: -50px;
         
     }
 
-    .counter__img-contain {
-        grid-column: 1/4;
-        justify-self: center;
-        align-self: start;
-    }
-    .counter__img-contain img {
-        width: 400px;
-        height: 250px;
-    }
-
-    .img__character2 {
-        position: absolute;
-        bottom: 130px;
-        left: 300px;
-    }
-
-    .img__character2 img {
-        width: 80px;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 130px;
-        left: 85px;
-    }
-    .img__character3 img {
-        width: 80px ;
+    .counter__days-text p {
+        margin: 0 20%;
+        font-size: 12px;
+        margin-top: 12%;
+        margin-bottom: 10%;
     }
 
     .img__character {
         position: absolute;
-        bottom: 107px;
-        left: -97px;
+        bottom: 105px;
+        left: -115px;
     }
 
     .img__character img {
-        width: 75px;
+        height: 80px;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 118px;
+        left: 10px;
+    }
+    .img__character3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character2 {
+        position: absolute;
+        bottom: 117px;
+        left: 130px;
+    }
+    .img__character2 img {
+        height: 80px;
+    }
+
+    .img__border3 {
+        position: absolute;
+        bottom: 60px;
+        right: 120px;  
+    }
+
+    .img__border3 img {
+        height: 80px;
+        width: auto;
     }
 
     .img__border2 {
         position: absolute;
-        bottom: 70px;
-        left: 240px;
+        bottom: 60px;
+        left: -25px;
     }
 
     .img__border2 img {
-        height: 85px;
+        height: 80px;
+        width: auto;
     }
-
+     
     .img__border {
         position: absolute;
-        bottom: 70px;
-        left: 30px; 
-
+        bottom: 60px;
+        left: 95px;
     }
 
     .img__border img {
-        height: 85px;
+      
+        height: 80px;
+        width: auto;
+    
     }
 
-    .img__border3 {
-        position: absolute;
-        bottom: 70px;
-        right: 240px;
+    .counter__button {
+        bottom: 40px;
+        left: 50px;
     }
 
-    .img__border3 img {
-        height: 85px;
-    }
+}
+
+@media screen and (min-width: 375px) and ( max-width: 413px ) {
 
     .counter__days-text {
         grid-column: 2/3;
@@ -819,91 +773,104 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        bottom: 40px;
-        margin-left: 5px;
+        bottom: 60px;
+        margin-left: -35px;
         margin-bottom: 60px;
     }
 
+    .counter__img-contain img {
+        margin-bottom: 10px;
+        width: 350px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .counter__days p {
+        margin: 0 30px;
+        text-shadow: 0 0 8px #FFF;
+        font-size: 36px;
+        margin-bottom: 200px;
+        
+    }
+    
+
     .counter__days-text p {
-        margin: 0 30%;
-            margin-top: 0px;
-            margin-bottom: 0px;
+        margin: 0 20%;
         font-size: 12px;
-        margin-top: -15%;
-        margin-bottom: 100%;
+        margin-top: -190%;
+        margin-bottom: -30%;
+        
+    }
+
+    .img__character {
+        position: absolute;
+        bottom: 235px;
+        left: -100px;
+    }
+
+    .img__character img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 247px;
+        left: -11px;
+    }
+    .img__character3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character2 {
+        position: absolute;
+        bottom: 250px;
+        left: 90px;
+    }
+
+    .img__border3 {
+        position: absolute;
+        bottom: 190px;
+        right: 100px;
+    }
+
+    .img__border3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__border2 {
+        position: absolute;
+        bottom: 190px;
+        left: -45px;
+    }
+
+    .img__border2 img {
+        height: 80px;
+        width: auto;
+    }
+     
+    .img__border {
+        position: absolute;
+        bottom: 190px;
+        left: 60px;
+    }
+
+    .img__border img {
+        height: 80px;
+        width: auto;
+    
     }
 
     .counter__button {
         position: relative;
-        bottom: 130px;
         left: 40px;
+        top: -25px;
     }
-
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-
-    .counter__img-contain {
-        grid-column: 1/4;
-        justify-self: center;
-        align-self: start;
-    
-        margin-bottom: 20px;
-        margin-top: -30px;
-        
-    }
-
-    .counter__days p {
-        margin: 0 6.5%;
-        text-shadow: 0 0 8px #FFF;
-        font-size: 56px;
-        margin-bottom: 10px;
-        
-    }
-
-    .img__character{
-        position: absolute;
-        bottom: 87px;
-        left: -43px;
-    }
-
-    .img__character2 {
-        position: absolute;
-        bottom: 110px;
-        left: 93%;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 110px;
-        left: 120px;
-    }
-
-    .img__border3 {
-        position: absolute;
-        bottom: 50px;
-        right: 250px;
-        
-    }
-    
-
-    .img__border2{
-        position: absolute;
-        bottom: 50px;
-        left: 250px;
-        
-
-    }
-
-    .img__border{
-        position: absolute;
-        bottom: 50px;
-        left: 20%;
-        
-
-    }
+@media screen and (min-width: 375px) and (min-height: 812px) {
 
     .counter__days-text {
         grid-column: 2/3;
@@ -911,206 +878,100 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        bottom: 40px;
+        bottom: 20px;
+        margin-left: -35px;
+        margin-bottom: 60px;
     }
 
-    .counter__days-text p {
-        margin: 0px 20%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 12px;
-        margin-top: -5%;
-        margin-bottom: 0%;
-    }
-
-    .counter__button {
-        position: relative;
-        bottom: 40px;
-
-    }
-    
-  }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    .counter__img-contain {
-        grid-column: 1/4;
-        justify-self: center;
-        align-self: start;
-    
-        margin-bottom: 20px;
-        margin-top: -30px;
-        
-    }
     .counter__img-contain img {
-        width: 550px;
-        height: 300px;
+        margin-bottom: 10px;
+        width: 350px;
+        height: 250px;
     }
 
     .counter__days p {
-        margin: 0 5%;
+        margin: 0 30px;
         text-shadow: 0 0 8px #FFF;
-        font-size: 56px;
-        margin-bottom: 10px;
-        
-    }
-
-    .img__character{
-        position: absolute;
-        bottom: 82px;
-        left: -13px;
-    }
-
-    .img__character2 {
-        position: absolute;
-        bottom: 105px;
-        left: 86%;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 105px;
-        left: 155px;
-    }
-
-    .img__border3 {
-        position: absolute;
-        bottom: 45px;
-        right: 290px;
+        font-size: 36px;
+        margin-bottom: 200px;
         
     }
     
 
-    .img__border2{
-        position: absolute;
-        bottom: 45px;
-        left: 285px;
-        
-
-    }
-
-    .img__border{
-        position: absolute;
-        bottom: 45px;
-        left: 25%;
-        
-
-    }
-
-    .counter__days-text {
-        grid-column: 2/3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        bottom: 40px;
-    }
-
     .counter__days-text p {
-        margin: 0px 17%;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0 20%;
         font-size: 12px;
-        margin-top: -3%;
-        margin-bottom: 0%;
+        margin-top: -320%;
+        margin-bottom: -30%;
+    }
+
+    .img__character {
+        position: absolute;
+        bottom: 274px;
+        left: -100px;
+    }
+
+    .img__character img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 288px;
+        left: -11px;
+    }
+    .img__character3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character2 {
+        position: absolute;
+        bottom: 285px;
+        left: 100px;
+    }
+
+    .img__border3 {
+        position: absolute;
+        bottom: 230px;
+        right: 100px;
+    }
+
+    .img__border3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__border2 {
+        position: absolute;
+        bottom: 230px;
+        left: -45px;
+    }
+
+    .img__border2 img {
+        height: 80px;
+        width: auto;
+    }
+     
+    .img__border {
+        position: absolute;
+        bottom: 230px;
+        left: 60px;
+    }
+
+    .img__border img {
+        height: 80px;
+        width: auto;
+    
     }
 
     .counter__button {
         position: relative;
-        bottom: 40px;
-
+        left: 40px;
+        top: -50px;
     }
-
 }
 
-@media(min-width: 1366px) {
 
-    .counter__img-contain {
-        grid-column: 1/4;
-        justify-self: center;
-        align-self: start;
-    
-        margin-bottom: 20px;
-        margin-top: -30px;
-        
-    }
-    .counter__img-contain img {
-        width: 550px;
-        height: 300px;
-        margin-top: 10px;
-    }
 
-    .counter__days p {
-        margin: 0 6%;
-        text-shadow: 0 0 8px #FFF;
-        font-size: 56px;
-        margin-bottom: 10px;
-        
-    }
-
-    .img__character{
-        position: absolute;
-        bottom: 55px;
-        left: -10px;
-    }
-
-    .img__character2 {
-        position: absolute;
-        bottom: 75px;
-        left: 87%;
-    }
-
-    .img__character3 {
-        position: absolute;
-        bottom: 75px;
-        left: 183px;
-    }
-
-    .img__border3 {
-        position: absolute;
-        bottom: 15px;
-        right: 340px;
-        
-    }
-    
-
-    .img__border2{
-        position: absolute;
-        bottom: 15px;
-        left: 340px;
-    }
-
-    .img__border{
-        position: absolute;
-        bottom: 15px;
-        left: 28%;
-        
-
-    }
-
-    .counter__days-text {
-        grid-column: 2/3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        bottom: 40px;
-    }
-
-    .counter__days-text p {
-        margin: 0px 17%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: 12px;
-        margin-top: 6%;
-        margin-bottom: 140px;
-    }
-
-    .counter__button {
-        position: relative;
-        bottom: 130px;
-
-    }
-
-} 

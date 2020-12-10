@@ -48,7 +48,7 @@ export const AppRoutes= () => {
                   } */}
                   <Route exact path="/clientes/molitalia/" component={ Counter } />
 
-                  <Redirect to="/" />
+                  <Redirect to="/clientes/molitalia/" />
 
             </Switch>
           </div>

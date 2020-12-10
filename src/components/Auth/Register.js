@@ -6,13 +6,13 @@ import Molitalia from '../../assets/logo-molitalia.svg';
 import Logo from '../../assets/KV.png';
 import Elfo from '../../assets/elfo.png';
 
+import { NavLink } from 'react-router-dom';
 // import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-
-
 import { startLogin } from '../../redux/actions/authAction';
 
 import './styles/auth.css';
-import { NavLink } from 'react-router-dom';
+
+
 
 
 export const Register = () => {
@@ -46,12 +46,13 @@ export const Register = () => {
             <img src={ Molitalia }  alt="LOGO" width="150" />
           </div>
 
-          <div className="counter__img-contain">
+          <div className="auth__img-contain">
            <img src={ Logo } alt="LOGO" width="550" height="350" />
           </div>
 
       <div className="auth__register">
         <form autoComplete="off" >
+       
            <label>Nombres: </label>
           <div className="auth__ugly-contain">
           <input
@@ -70,8 +71,8 @@ export const Register = () => {
                 <p> Éste campo requiere un mínimo de 4 carácteres. </p>
             )}
           </div>
-          
-            <label>Apellidos: </label>
+          {/* <br /> */}
+            <label>Apellidos Paterno y Materno: </label>
           <div className="auth__ugly-contain">
           <input
               type="text"
@@ -89,8 +90,8 @@ export const Register = () => {
               <p> Éste campo requiere un mínimo de 4 carácteres. </p>
           )}
           </div>
-
-            <label>Código: </label>
+              {/* <br /> */}
+            <label>DNI: </label>
           <div className="auth__ugly-contain">
           <input
               type="password"
@@ -98,6 +99,7 @@ export const Register = () => {
               
               name="rCode"
               autoComplete="off"
+              
               value={rCode}
               onChange={handleRegisterChange}
               ref={register({
@@ -129,7 +131,13 @@ export const Register = () => {
           </div>      */}
         </form>
 
-          <div className="auth__img-elf">
+          {/* <div className="auth__img-elf">
+              <img alt="LOGO" src={ Elfo } width="200"
+              
+              />
+          </div> */}
+
+          <div className="auth__img-elf2">
               <img alt="LOGO" src={ Elfo } width="200"
               
               />

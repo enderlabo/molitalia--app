@@ -56,7 +56,7 @@ const Counter = () => {
         </div>
 
         <div className="counter__img-contain">
-           <img src={Logo} alt="LOGO" width="550" height="300" />
+           <img src={Logo} alt="LOGO" width="550" height="350" />
         </div>
 
         <div className="counter__days">

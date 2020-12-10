@@ -20,6 +20,7 @@
 **/assets/video/*
 **./src/assets/video/*
 src/assets/video/corregir3.mp4
+**src/assets/video/corregir3.mp4
 
 npm-debug.log*
 yarn-debug.log*
