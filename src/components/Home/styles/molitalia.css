@@ -136,6 +136,15 @@
     right: 108%;
 }
 
+.img__LogoM {
+    position: absolute;
+    top: 50px;
+    left: 75px;
+}
+.img__LogoM img {
+    width: 120px;
+}
+
 .molitalia__8-11 {
     position: relative;
     grid-column: 3/4;

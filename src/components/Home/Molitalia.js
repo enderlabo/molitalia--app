@@ -21,6 +21,7 @@ import Arbol from '../../assets/PNG/Recurso 16.png';
 import Guy from '../../assets/PNG/Recurso 17.png';
 import Guy2 from '../../assets/PNG/niña.png';
 import Fanny from '../../assets/PNG/Fanny.png'; 
+import LogoM from '../../assets/PNG/Recurso 9.png';
 
 import Modal from 'react-modal';
 import { NavLink } from 'react-router-dom';
@@ -111,6 +112,10 @@ export const Molitalia = () => {
 
                 <div className="img__elf2">
                     <img alt="Logo" src={ Elf2 } width="100" />
+                </div>
+
+                <div className="img__LogoM">
+                    <img alt="LOGO" src={ LogoM } />
                 </div>
             </div>
             
