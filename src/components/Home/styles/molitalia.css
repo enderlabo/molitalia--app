@@ -307,7 +307,7 @@
     ##Screen = B/w 481px to 767px
   */
   
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media screen and (min-width: 481px) and (max-width: 767px) {
     
     .map__contain {
         display: grid;
@@ -329,15 +329,14 @@
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-  
-   @media (min-width: 320px) and (max-width: 480px) { 
+  @media screen and (min-width: 360px) and (min-height: 740px) { 
 
     
     .map__contain {
         display: grid;
     
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
 
         
         background-image: url('/src/assets/mapaMobile.png') !important;
@@ -348,6 +347,291 @@
         background-repeat: no-repeat;
         width: 100vw;
         height: 100vh; 
+    }
+
+    .molitalia__logo-moli {
+        grid-column: 1/1;
+        grid-row: 1/1;
+
+        justify-self: right;
+        
+    }
+
+    .molitalia__logo-moli img {
+        width: 100px;
+        margin-bottom: 20px;
+
+    }
+
+    .molitalia__logo {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: self-start;
+        align-self: flex-start;
+
+    }
+    .molitalia__logo img {
+        width: 350px;
+        height: 200px;
+
+    
+    }
+
+    .molitalia__5-7 {
+        grid-row: 2/3 ;
+        display: relative;
+        /* grid-column: ; */
+    }
+
+    .img__5-7 {
+        display: absolute;
+        left: 65px;
+        bottom: 70px;
+    }
+    .img__5-7 img {
+        height: 100px;
+        width: 65px;
+    }
+
+    .img__whiteToy {
+        grid-row: 2/3;
+        display: absolute;
+        top: 35px;
+        left: 35px;
+    }
+    .img__whiteToy img {
+        height: 65px;
+        width: 40px;
+
+    }
+
+    .img__redBanner {
+        grid-row: 2/3;
+        display: absolute;
+        top: 40px;
+        left: 127px;
+    }
+    .img__redBanner img {
+        height: 25px;
+        width: 60px;
+    }
+
+    .molitalia__0-2 {
+        grid-row: 2/3;
+        display: relative;
+    }
+    .img__0-2{
+        left: 225px;
+        top: -20px;
+
+    }
+    .img__0-2 img {
+        
+        height: 100px;
+        width: 65px;
+    }
+
+    .img__bear{
+        display: absolute;
+        grid-row: 2/3;
+        left: 290px;
+        top: 15px;
+    }
+    .img__bear img {
+        height: 65px;
+        width: 50px;
+    }
+
+    .img__bear-red {
+        display: absolute;
+        grid-row: 2/3;
+        left: 205px;
+        top: 20px;
+    }
+    .img__bear-red img {
+        height: 40px;
+        width: 35px;
+    }
+
+    .molitalia__games {
+        grid-row: 2/3;
+        position: relative;
+    }
+
+    .img__games {
+        position: absolute;
+        top: 60px;
+        right: 100px;
+    }
+    .img__games img {
+        width: 65px;
+        height: 110px;
+    }
+
+    .img__elf2 {
+        position: absolute;
+        top: 76px;
+        right: 145px;
+    }
+    .img__elf2 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .molitalia__8-11 {
+        grid-row: 4/5;
+        position: relative;
+    }
+
+    .img__8-11 {
+        position: absolute;
+        bottom: 105px;
+        left: -110px;
+    }
+    .img__8-11 img {
+        height: 100px;
+        width: 65px;
+    }
+
+    .molitalia__2-4 {
+        grid-row: 4/5;
+        position: relative;
+    }
+    .img__2-4 {
+        position: absolute;
+        left: 155px;
+        bottom: 90px;
+    }
+    .img__2-4 img {
+        height: 100px;
+        width: 65px;
+    }
+
+    .img__elfo3 {
+        position: absolute;
+        top: -70px;
+        right: 205px;
+    }
+    .img__elfo3 img {
+        width: 50px;
+    }
+
+    .img__todinno {
+        position: absolute;
+        top: -15px;
+        right: 195px;
+
+    }
+    .img__todinno img {
+        width: 60px;
+        height: 20px;
+    }
+
+    .molitalia__arbol {
+        grid-row: 3/4;
+        position: relative;
+    }
+    .img__arbol {
+        position: absolute;
+        top: -35px;
+        left: -225px;
+    }
+    .img__arbol img {
+        width: 125px;
+        height: 140px;
+    }
+
+    .img__guy {
+        position: absolute;
+        top: 145px;
+        right: 135px;
+    }
+    .img__guy img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img__yellowGuy {
+        position: absolute;
+        top: 85px;
+        left: -205px;
+    }
+    .img__yellowGuy img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .img__costa {
+        position: absolute;
+        left: -90px;
+        top: 70px;
+    }
+    .img__costa img {
+        width: 50px;
+        height: 25px;
+    }
+
+    .img__reno {
+        position: absolute;
+        top: 15px;
+        left: -155px;
+    }
+    .img__reno img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .img__dog {
+        position: absolute;
+        top: -145px;
+        right: 265px;
+    }
+    .img__dog img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .img__orangeBanner {
+        position: absolute;
+        top: -170px;
+        right: 220px;
+    }
+
+    .img__orangeBanner img {
+        width: 70px;
+        height: 25px;
+    }
+
+    .img__fanny {
+        position: absolute;
+        top: 390px;
+        left: 170px;
+    }
+    .img__fanny img {
+        width: 50px;
+        height: 40px;
+    }
+    
+    /* CSS */
+    
+  }
+  
+@media screen and (min-width: 375px) and (min-height: 667px) {
+    .map__contain {
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        
+        background-image: url('/src/assets/mapaMobile.png') !important;
+        background-image: none;
+        background-position: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%; 
     }
 
     .molitalia__logo-moli {
@@ -453,8 +737,130 @@
         width: 50px;
     }
     
+}
+
+@media screen and (min-width: 375px) and (min-height: 812px) {
+    .map__contain {
+        display: grid;
     
-    /* CSS */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        
+        background-image: url('/src/assets/mapaMobile.png') !important;
+        background-image: none;
+        background-position: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%; 
+    }
+
+    .molitalia__logo-moli {
+        grid-column: 1/1;
+        grid-row: 1/1;
+
+        justify-self: right;
+        
+    }
+
+    .molitalia__logo-moli img {
+        width: 100px;
+        margin-bottom: 20px;
+
+    }
+
+    .molitalia__logo {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-self: self-start;
+        align-self: flex-start;
+
+    }
+    .molitalia__logo img {
+        width: 350px;
+        height: 200px;
+
     
-  }
+    }
+
+    .molitalia__5-7 {
+        grid-row: 2/3 ;
+        display: relative;
+        /* grid-column: ; */
+    }
+
+    .img__5-7 {
+        display: absolute;
+        left: 75px;
+    }
+    .img__5-7 img {
+        height: 110px;
+        width: 75px;
+    }
+
+    .img__whiteToy {
+        grid-row: 2/3;
+        display: absolute;
+        top: 10px;
+        left: 45px;
+    }
+    .img__whiteToy img {
+        height: 65px;
+        width: 50px;
+
+    }
+
+    .img__redBanner {
+        grid-row: 2/3;
+        display: absolute;
+        top: 10px;
+        left: 147px;
+    }
+    .img__redBanner img {
+        height: 30px;
+        width: 60px;
+    }
+
+    .molitalia__0-2 {
+        grid-row: 2/3;
+        display: relative;
+    }
+    .img__0-2{
+        left: 235px;
+        top: -65px;
+
+    }
+    .img__0-2 img {
+        
+        height: 110px;
+        width: 75px;
+    }
+
+    .img__bear{
+        display: absolute;
+        grid-row: 2/3;
+        left: 215px;
+        top: -25px;
+    }
+    .img__bear img {
+        height: 65px;
+        width: 50px;
+    }
+
+    .img__bear-red {
+        display: absolute;
+        grid-row: 2/3;
+        left: 255px;
+        top: -25px;
+    }
+    .img__bear-red img {
+        height: 65px;
+        width: 50px;
+    }
+}
+
+
+
   
