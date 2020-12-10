@@ -76,12 +76,12 @@
     
     position: absolute;
     top: -18px;
-    left: 535px;
+    left: 500px;
 }
 
 .auth__img-elf2 img {
     height: 200px;
-    width: 200px;
+    width: 250px;
 }
 
 .auth__ugly-contain{
