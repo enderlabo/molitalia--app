@@ -8,7 +8,7 @@ export const startLogin = ( rCode, rName, rLastName ) => {
 
     return async() => {
       
-        let data = { rCode,  rName, rLastName }
+        let data = { "dni": rCode,  "nombre": rName, "apellido":rLastName }
         
         // const formData = new FormData();
         // formData.append('dni', rCode );
@@ -17,7 +17,10 @@ export const startLogin = ( rCode, rName, rLastName ) => {
     
         let response = await fetch(`${baseUrl}/registro`, {
             method: 'POST',
-            body: data,
+            headers: {
+                'Content-type': 'application/json'
+            },
+            data,
             success: function(response) {
                 console.log(response);
             }
@@ -26,10 +29,15 @@ export const startLogin = ( rCode, rName, rLastName ) => {
         // const resp = await fetchWithoutToken('registro', { rName, rLastName, rCode }, 'POST');
         console.log(response)
         console.log(data);
-         return response
+         
     }
     
 }
+
+const login = ( user ) => ({
+    type: types.authLogin,
+    payload: user
+})
 
 export const logOut = () => ({
     type: types.logOut

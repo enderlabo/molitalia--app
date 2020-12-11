@@ -8,9 +8,9 @@ import { types } from "../types/types";
 */
 
 const initialState = {
+    dni: '',
     nombre: '',
     apellidos: '',
-    dni: '',
 
 }
 
@@ -18,10 +18,12 @@ const initialState = {
 export const authReducer = ( state = initialState, action ) => {
 
     switch ( action.type ) {
-        case types.authLogin:
+        case types.authStartLogin:
             return {
-            ...state,
-            ...action.payload  
+           ...state,
+           dni: action.payload,
+           nombre: action.payload,
+           apellidos: action.payload
               
             }
         case types.logOut:
