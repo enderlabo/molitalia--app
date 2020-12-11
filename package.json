@@ -1,7 +1,7 @@
 {
   "name": "landing_page",
   "version": "0.1.0",
-  "homepage": "likeseasons.com",
+  "homepage": "https://magicanavidad.molitalia.com.pe",
   "private": true,
   "dependencies": {
     "@material-ui/icons": "^4.9.1",

@@ -96,7 +96,7 @@ const Counter = () => {
         </div>
 
         <div className="counter__button">
-          <NavLink exact to="/clientes/molitalia/registro" >Registro</NavLink>
+          <NavLink exact to="/registro" >Registro</NavLink>
         </div>
        
       </div>

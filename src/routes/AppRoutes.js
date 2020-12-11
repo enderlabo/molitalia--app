@@ -36,19 +36,19 @@ export const AppRoutes= () => {
                 
                 {/* {
                   isLoggedIn ? ( */}
-                    <Route exact path="/clientes/molitalia/mapa" component={ Molitalia } />
+                    <Route exact path="/mapa" component={ Molitalia } />
 
                   {/* ) :
                   (
                     <> */}
-                    <Route exact path="/clientes/molitalia/registro" component={ Register } />
+                    <Route exact path="/registro" component={ Register } />
                     
                     {/* </>  
                     )
                   } */}
-                  <Route exact path="/clientes/molitalia/" component={ Counter } />
+                  <Route exact path="/contador" component={ Counter } />
 
-                  <Redirect to="/clientes/molitalia/" />
+                  <Redirect to="/contador" />
 
             </Switch>
           </div>

@@ -34,6 +34,12 @@ export const Register = () => {
     //     // openModal();
   
     // }
+    const isNumberKey = (evt) =>{
+      var charCode = (evt.which) ? evt.which : evt.keyCode
+      if (charCode > 31 && (charCode < 48 || charCode > 57))
+          return false;
+      return true;
+  }
 
     const handleLogin = (e) => {
       e.preventDefault();
@@ -56,7 +62,7 @@ export const Register = () => {
            <label>Nombres: </label>
           <div className="auth__ugly-contain">
           <input
-              type="text"
+              type="text" 
               className="inputFeo"
               
               name="rName"
@@ -94,7 +100,8 @@ export const Register = () => {
             <label>DNI: </label>
           <div className="auth__ugly-contain">
           <input
-              type="password"
+              type="numeric" 
+              min="-100" max="100" 
               className="inputFeo"
               
               name="rCode"
@@ -145,7 +152,7 @@ export const Register = () => {
       </div>
 
       <div className="register__button" onClick={ handleLogin }>
-        <NavLink exact to="/clientes/molitalia/mapa">Aceptar</NavLink>
+        <NavLink exact to="/mapa">Aceptar</NavLink>
         {/* <a >Aceptar</a> */}
       </div>
 

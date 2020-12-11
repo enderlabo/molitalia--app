@@ -9,7 +9,7 @@ import Bear from '../../assets/PNG/Recurso 12.png';
 import BearRed from '../../assets/PNG/Recurso 18.png';
 import OrangeBuilding from '../../assets/PNG/Recurso 4.png';
 import Elf2 from '../../assets/PNG/Recurso 2.png';
-import BrownBuilding from '../../assets/PNG/Recurso 10.png';
+import BrownBuilding from '../../assets/PNG/8-12.png';
 import Reno from '../../assets/PNG/Recurso 8.png';
 import PinkBuilding from '../../assets/PNG/Recurso 1.png';
 import Elfo3 from '../../assets/PNG/Recurso 3.png';
