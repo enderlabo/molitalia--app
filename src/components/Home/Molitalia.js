@@ -24,8 +24,7 @@ import Fanny from '../../assets/PNG/Fanny.png';
 import LogoM from '../../assets/PNG/Recurso 9.png';
 
 import Modal from 'react-modal';
-import { NavLink } from 'react-router-dom';
-import ReactPlayer from 'react-player';
+//import ReactPlayer from 'react-player';
 import VideoPlayer from 'react-video-js-player'
 import { customModalStyles } from '../../helpers';
 import Video from '../../assets/video/corregir3.mp4';
@@ -36,7 +35,7 @@ Modal.setAppElement('#root')
 
 export const Molitalia = () => {
 
-    const videoSrc = Video;
+    //const videoSrc = Video;
 
     const [modalIsOpen,setIsOpen] = useState(true);
      

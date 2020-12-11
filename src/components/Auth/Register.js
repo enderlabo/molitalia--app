@@ -30,7 +30,7 @@ export const Register = () => {
 
     // const onSubmit = () => {
     //     console.log(rName, rCode );
-    //     dispatch( startLogin( rName, rCode ) );
+    //     dispatch( startLogin( rName, rLastName, rCode ) );
     //     // openModal();
   
     // }
@@ -43,7 +43,7 @@ export const Register = () => {
 
     const handleLogin = (e) => {
       e.preventDefault();
-        dispatch( startLogin( rName, rCode ) );
+        dispatch( startLogin( rCode, rName, rLastName ) );
     }
 
     return (
@@ -57,14 +57,14 @@ export const Register = () => {
           </div>
 
       <div className="auth__register">
-        <form autoComplete="off" >
+        <form autoComplete="off" id="auth" >
        
            <label>Nombres: </label>
           <div className="auth__ugly-contain">
           <input
               type="text" 
               className="inputFeo"
-              
+              id="nombre"
               name="rName"
               value={rName}
               onChange={handleRegisterChange}
@@ -83,7 +83,7 @@ export const Register = () => {
           <input
               type="text"
               className="inputFeo"
-              
+              id="apellido"
               name="rLastName"
               value={rLastName}
               onChange={handleRegisterChange}
@@ -103,7 +103,7 @@ export const Register = () => {
               type="numeric" 
               min="-100" max="100" 
               className="inputFeo"
-              
+              id="dni"
               name="rCode"
               autoComplete="off"
               
@@ -111,8 +111,7 @@ export const Register = () => {
               onChange={handleRegisterChange}
               ref={register({
               required: true,
-              minLength: 6,
-              maxLength: 20,
+              maxLength: 8,
               })}
           />
       
@@ -120,12 +119,8 @@ export const Register = () => {
               <p> El código es requerido. </p>
           )}
 
-          {errors.rCode && errors.rCode.type === "minLength" && (
-              <p> El código requiere un mínimo de 6 dígitos. </p>
-          )}
-
           {errors.rCode && errors.rCode.type === "maxLength" && (
-              <p> EL código permite un máximo de 20 dígitos. </p>
+              <p> EL código permite un máximo de 8 dígitos. </p>
           )}
           </div>
 
@@ -152,8 +147,8 @@ export const Register = () => {
       </div>
 
       <div className="register__button" onClick={ handleLogin }>
-        <NavLink exact to="/mapa">Aceptar</NavLink>
-        {/* <a >Aceptar</a> */}
+        {/* <NavLink exact to="/mapa">Aceptar</NavLink> */}
+        <a >Aceptar</a>
       </div>
 
       </div>
