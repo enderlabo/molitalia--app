@@ -304,6 +304,10 @@
         width: 100vw;
         height: 100vh; 
     }
+    .ReactModal__Overlay {
+        background: rgb(0, 0, 0, 0.5) !important;
+        display: none;
+    }
 
     .molitalia__logo-moli {
         grid-column: 1/1;
@@ -599,6 +603,10 @@
         
     }
 
+    .ReactModal__Overlay {
+        background: rgb(0, 0, 0, 0.5) !important;
+        display: none;
+    }
     .molitalia__logo-moli img {
         width: 100px;
         margin-bottom: 20px;
@@ -1156,6 +1164,10 @@
         background-repeat: no-repeat;
         width: 100vw;
         height: 100vh; 
+    }
+    .ReactModal__Overlay {
+        background: rgb(0, 0, 0, 0.5) !important;
+        display: none;
     }
 
     .molitalia__logo-moli {
