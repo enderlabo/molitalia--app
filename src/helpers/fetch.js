@@ -3,8 +3,6 @@ const baseUrl = 'https://magicanavidad.molitalia.com.pe/api';
 
 export const fetchWithoutToken = ( endpoint, data, method = 'GET' ) => {
 
-    
-
     const url = `${ baseUrl }/${ endpoint }`;
 
     if( method === 'GET' ) {
@@ -22,3 +20,4 @@ export const fetchWithoutToken = ( endpoint, data, method = 'GET' ) => {
     }
 
 }
+

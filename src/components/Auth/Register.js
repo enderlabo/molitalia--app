@@ -1,23 +1,18 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { useForm } from "react-hook-form";
 import { useCustomForm } from '../hooks/useForm';
 import Molitalia from '../../assets/logo-molitalia.svg';
 import Logo from '../../assets/KV.png';
 import Elfo from '../../assets/elfo.png';
-
-import { NavLink } from 'react-router-dom';
-// import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import { startLogin } from '../../redux/actions/authAction';
+import { useHistory } from "react-router-dom";
+import {  sweetErrorName, sweetErrorLastName, sweetErrorCode } from '../UI/SweetAlert';
 
 import './styles/auth.css';
-
-
-
+import { sweetAlert } from '../UI/SweetAlert';
 
 export const Register = () => {
 
-    const dispatch = useDispatch();
+    const history = useHistory();
     const [formRegisterValues, handleRegisterChange] = useCustomForm({
         rName: "",
         rLastName: "",
@@ -25,25 +20,26 @@ export const Register = () => {
         
       });
       const { rName, rLastName, rCode } = formRegisterValues;
-      const { register, errors } = useForm();
+      const { register, handleSubmit, errors } = useForm({
+        mode: "onBlur",
+      });
 
+      function onSubmit(data) {
+        console.log(data);
+      }
 
-    // const onSubmit = () => {
-    //     console.log(rName, rCode );
-    //     dispatch( startLogin( rName, rLastName, rCode ) );
-    //     // openModal();
-  
-    // }
-    const isNumberKey = (evt) =>{
-      var charCode = (evt.which) ? evt.which : evt.keyCode
-      if (charCode > 31 && (charCode < 48 || charCode > 57))
-          return false;
-      return true;
-  }
+    const postRegister = () => {
 
-    const handleLogin = (e) => {
-      e.preventDefault();
-        dispatch( startLogin( rCode, rName, rLastName ) );
+      rCode === '' ? sweetAlert() : history.push("/mapa");
+
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ dni: rCode, nombre: rName, apellido: rLastName })
+    };
+
+      fetch('https://magicanavidad.molitalia.com.pe/api/registro', requestOptions)
+        .then(response => response.json())
     }
 
     return (
@@ -57,28 +53,28 @@ export const Register = () => {
           </div>
 
       <div className="auth__register">
-        <form autoComplete="off" id="auth" >
+        <form autoComplete="off" onSubmit={handleSubmit(onSubmit)} >
        
-           <label>Nombres: </label>
+           <label>Apellido Paterno: </label>
           <div className="auth__ugly-contain">
           <input
               type="text" 
               className="inputFeo"
-              id="nombre"
               name="rName"
               value={rName}
               onChange={handleRegisterChange}
-              ref={register({ required: true, minLength: 4 })}
+              ref={register({
+                required: true,
+                minLength: 6,
+                maxLength: 20,
+                pattern: /^[A-Za-z]+$/i,
+              })}
+              style={{ borderColor: errors.rName && "red" }}
           />
-            {errors.rName && errors.rName.type === "required" && (
-                <p> El nombre es requerido. </p>
-            )}
-            {errors.rName && errors.rName.type === "minLength" && (
-                <p> Éste campo requiere un mínimo de 4 carácteres. </p>
-            )}
+
           </div>
           {/* <br /> */}
-            <label>Apellidos Paterno y Materno: </label>
+            <label>Apellido Materno: </label>
           <div className="auth__ugly-contain">
           <input
               type="text"
@@ -89,12 +85,9 @@ export const Register = () => {
               onChange={handleRegisterChange}
               ref={register({ required: true, minLength: 4 })}
           />
-          {errors.rLastName && errors.rLastName.type === "required" && (
-              <p> El apellido es requerido. </p>
-          )}
-          {errors.rLastName && errors.rLastName.type === "minLength" && (
-              <p> Éste campo requiere un mínimo de 4 carácteres. </p>
-          )}
+          {/* {errors.rLastName &&  (
+              sweetErrorLastName()
+          )} */}
           </div>
               {/* <br /> */}
             <label>DNI: </label>
@@ -115,29 +108,13 @@ export const Register = () => {
               })}
           />
       
-          {errors.rCode && errors.rCode.type === "required" && (
-              <p> El código es requerido. </p>
-          )}
+          {/* {errors.rCode &&  (
+              sweetErrorCode()
+          )} */}
 
-          {errors.rCode && errors.rCode.type === "maxLength" && (
-              <p> EL código permite un máximo de 8 dígitos. </p>
-          )}
           </div>
 
-          {/* <div className="form-group">
-          <input
-              type="submit"
-              className="btnSubmit btn-lg btn-block"
-              value="Create"
-          />
-          </div>      */}
         </form>
-
-          {/* <div className="auth__img-elf">
-              <img alt="LOGO" src={ Elfo } width="200"
-              
-              />
-          </div> */}
 
           <div className="auth__img-elf2">
               <img alt="LOGO" src={ Elfo } width="200"
@@ -146,9 +123,9 @@ export const Register = () => {
           </div>
       </div>
 
-      <div className="register__button" onClick={ handleLogin }>
-        {/* <NavLink exact to="/mapa">Aceptar</NavLink> */}
-        <a >Aceptar</a>
+      <div className="register__button" >
+        {/* <NavLink exact to="/mapa" disable={ true } >Aceptar</NavLink> */}
+        <a onClick={ postRegister }>Aceptar</a>
       </div>
 
       </div>

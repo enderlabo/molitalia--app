@@ -52,7 +52,7 @@ export const Molitalia = () => {
 
     const url = () =>{
     
-       window.open("https://appstouchperu.com/Apps/Molitalia/", "_blank");
+       window.open("http://magicanavidad.molitalia.com.pe/index_juegos.html", "_blank");
     } 
 
     useEffect( () => {

@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.swal2-popup{
+
+    width: 20rem !important;
+}
+
 .auth__container {
     display: grid;
     
@@ -75,7 +80,7 @@
 .auth__img-elf2 {
     
     position: absolute;
-    top: -18px;
+    top: -10px;
     left: 500px;
 }
 

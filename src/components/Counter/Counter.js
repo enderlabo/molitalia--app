@@ -19,7 +19,7 @@ const Counter = () => {
   let interval = useRef();
  
   const startTimer = () => {
-    const countDownTime = new Date('Dec 12, 2020, 00:00:00').getTime();
+    const countDownTime = new Date('Dec 13, 2020, 00:00:00').getTime();
 
     interval = setInterval( () => {
       const now = new Date().getTime();
@@ -58,12 +58,22 @@ const Counter = () => {
         <div className="counter__img-contain">
            <img src={Logo} alt="LOGO" width="550" height="350" />
         </div>
-
-        <div className="counter__days">
-            <p>{days}</p>
-              <p id="hours">{hours}</p>
-            <p>{minutes}</p> 
-        </div>
+      {/* {
+        hours.length > 0 ?(
+          <div className="counter__days">
+          <p>{days}</p>
+            <p id="hours">{hours}</p>
+          <p>{minutes}</p> 
+      </div>
+        ) : (  <div className="counter__days">
+        <p>BIENVENIDOS</p>
+    </div> )
+      } */}
+          <div className="counter__days">
+              <p>{days}</p>
+                <p id="hours">{hours}</p>
+              <p>{minutes}</p> 
+          </div>
 
         <div className="counter__border-contain">
             <div className="img__border">

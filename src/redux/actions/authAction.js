@@ -1,12 +1,11 @@
-import { fetchWithoutToken } from "../../helpers/fetch"
 import { types } from "../types/types"
 
 const baseUrl = 'https://magicanavidad.molitalia.com.pe/api';
 
 
-export const startLogin = ( rCode, rName, rLastName ) => {
+export const startLogin = async( rCode, rName, rLastName ) => {
 
-    return async() => {
+   // return async() => {
       
         let data = { "dni": rCode,  "nombre": rName, "apellido":rLastName }
         
@@ -30,14 +29,14 @@ export const startLogin = ( rCode, rName, rLastName ) => {
         console.log(response)
         console.log(data);
          
-    }
+    //}
     
 }
 
-const login = ( user ) => ({
-    type: types.authLogin,
-    payload: user
-})
+// const login = ( user ) => ({
+//     type: types.authLogin,
+//     payload: user
+// })
 
 export const logOut = () => ({
     type: types.logOut
