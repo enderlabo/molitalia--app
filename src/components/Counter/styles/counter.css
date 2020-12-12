@@ -12,6 +12,7 @@
     display: grid;
     
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: ; */
     /* justify-items: center;
     align-items: center; */
@@ -54,6 +55,7 @@
 
 .counter__days{
     grid-column: 1/4;
+    grid-row: 3/4;
     display: flex;
     position: relative;
     align-items: center;
@@ -80,10 +82,10 @@
 }
 
 .counter__days p {
-    margin: 0 5%;
+    margin: 0 55px;
     text-shadow: 0 0 8px #FFF;
     font-size: 56px;
-    margin-bottom: 50px;
+    margin-bottom: 115px;
     
 }
 
@@ -118,14 +120,28 @@
     /* align-self: center;
     justify-self: center; */
     /* display: flex; */
+    display: relative;
     position: relative;
-    grid-column: 2/3;  
+    grid-column: 2/3;
+    grid-row: 3/4;
+    bottom: 65px;
+
     
 }
 
 .counter__border-contain img {
     margin: 0 40px;
 }
+
+.counter__contain2 {
+    display: relative;
+    grid-row: 3/4;
+    background: transparent;
+    top: 50px;
+    
+}
+
+
 
 .img__border {
     position: absolute;
@@ -206,25 +222,20 @@
 @media screen and (min-width: 360px) and ( min-height: 740px ) {
 
     .counter__container {
-        width: 115vw;
-        height: 120vh;
+        width: 145vw;
+        height: 145vh;
     }
-    .counter__border-contain {
-        /* grid-column: 1/4; */
-        /* align-self: center;
-        justify-self: center; */
-        /* display: flex; */
-        position: relative;
-        grid-column: 2/3;  
-        
+    .counter__border-contain img {
+        width: 300px;
     }
+
     .counter__days {
         grid-column: 1/4;
         display: flex;
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 70px;
+        margin-right: 170px;
     }
 
     .counter__days-text {
@@ -241,31 +252,57 @@
     .counter__img-contain img {
         margin-bottom: 10px;
         width: 350px;
-        height: 250px;
-        margin-top: 20px;
-        margin-right: 45px;
+        height: 300px;
+        margin-top: -80px;
+        margin-right: 155px;
     }
 
     .counter__days p {
-        margin: 0 30px;
+        margin: 0 40px;
         text-shadow: 0 0 8px #FFF;
         font-size: 36px;
-        margin-bottom: 200px;
+        margin-bottom: 315px;
         
     }
     
 
     .counter__days-text p {
-        
         font-size: 12px;
-       
+    }
+
+    .counter__border-contain {
+        /* grid-column: 1/4; */
+        /* align-self: center;
+        justify-self: center; */
+        /* display: flex; */
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 65px;
+    
         
     }
-.counter__days-contain {
-        position: absolute;
-        bottom: 100px;
-        right: 200px;
-}
+
+    .counter__days-contain {
+            position: absolute;
+            bottom: 100px;
+            right: 200px;
+    }
+    .counter__border-contain {
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 165px;
+        right: 145px;
+
+        
+    }
 
 .counter__hours-contain {
     position: absolute;
@@ -342,8 +379,8 @@
 
     .counter__button {
         position: relative;
-        left: 15px;
-        top: -65px;
+        left: -35px;
+        top: -90px;
     }
 }
 
@@ -415,9 +452,9 @@
 
     .counter__img-contain img {
         margin-bottom: 10px;
-        width: 350px;
+        width: 400px;
         height: 250px;
-        margin-right: 50px;
+        margin-right: 85px;
     }
 
     .counter__days {
@@ -426,7 +463,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 65px;
+        margin-right: 125px;
     }
 
     .counter__days p {
@@ -453,6 +490,23 @@
         position: absolute;
         bottom: 9px;
         left: 110px;
+    }
+
+    .counter__border-contain {
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 105px;
+        right: 130px;
+    }
+
+    .counter__border-contain img {
+        width: 300px;
     }
     
 
@@ -539,6 +593,11 @@
 
 @media screen and (min-width: 375px) and (min-height: 812px) {
 
+    .counter__container {
+        width: 135vw;
+        height: 135vh;
+    }
+
     .counter__days-text {
         grid-column: 2/3;
         display: flex;
@@ -552,9 +611,22 @@
 
     .counter__img-contain img {
         margin-bottom: 10px;
-        width: 350px;
-        height: 250px;
-        margin-right: 65px;
+        width: 400px;
+        height: 350px;
+        margin-right: 135px;
+    }
+
+    .counter__border-contain {
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 135px;
+        right: 150px;
     }
 
     .counter__days {
@@ -563,7 +635,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 70px;
+        margin-right: 165px;
     }
 
     .counter__days-contain {
@@ -588,7 +660,7 @@
         margin: 0 40px;
         text-shadow: 0 0 8px #FFF;
         font-size: 38px;
-        margin-bottom: 200px;
+        margin-bottom: 260px;
         
     }
     
@@ -663,7 +735,7 @@
 
     .counter__button {
         position: relative;
-        left: 15px;
+        left: 5px;
         top: -80px;
     }
 }
@@ -796,11 +868,16 @@
 
 @media screen and (min-width: 414px) and (min-height: 736px) {
 
+    .counter__container {
+        width: 125vw;
+        height: 127vh;
+    }
+
     .counter__img-contain img {
         width: 450px;
         height: 260px;
-        margin-bottom: 0px;
-        margin-right: 45px;
+        margin-bottom: 160px;
+        margin-right: 65px;
     }
 
     .counter__days {
@@ -809,7 +886,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 70px;
+        margin-right: 75px;
     }
 
     .counter__days-text {
@@ -842,12 +919,29 @@
         left: 165px;
     }
 
+    .counter__border-contain {
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 200px;
+        right: 105px;
+    }
+
+    .counter__border-contain img {
+        width: 300px;
+    }
+
     .counter__days p {
-        margin: 0 45px;
+        margin: 0px 35px;
         text-shadow: 0 0 8px #FFF;
         font-size: 36px;
         margin-bottom: 10px;
-        margin-top: -50px;
+        margin-top: -380px;
         
     }
 
@@ -933,7 +1027,7 @@
 @media screen and (min-width: 768px) and (min-height: 1024px) {
 
     .counter__days p {
-        margin: 0 10%;
+        margin: 0 8%;
         text-shadow: 0 0 8px #FFF;
         font-size: 46px;
         margin-bottom: 115px;
@@ -953,6 +1047,23 @@
         width: 550px;
         height: 350px;
         margin-top: 25px;
+    }
+
+    .counter__border-contain {
+        grid-column: 1/4;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        display: relative;
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        bottom: 60px;
+        right: 15px;
+    }
+
+    .counter__border-contain img {
+        width: 400px;
     }
 
     .img__character2 {

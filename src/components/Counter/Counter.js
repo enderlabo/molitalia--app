@@ -5,6 +5,7 @@ import Pinguino from '../../assets/personaje1.png';
 import Elfo from '../../assets/personaje2.png';
 import Reno from '../../assets/personaje3.png';
 import Molitalia from '../../assets/logo-molitalia.png';
+import Contador from '../../assets/contador.png';
 
 import './styles/counter.css';
 import { NavLink } from 'react-router-dom';
@@ -77,6 +78,16 @@ const Counter = () => {
           </div>
 
         <div className="counter__border-contain">
+
+          <div className="counter__contain2">
+            <img src={ Contador } alt="CONTADOR" width="450" />
+         
+          </div>
+
+          
+        {/* 
+
+          
           
             <div className="img__border">
               <img src={ Esfera } alt="ESFERA" width="100" />
@@ -99,9 +110,10 @@ const Counter = () => {
             <div className="img__character3">
               <img alt="Reno" src={ Reno } width="80" />
             </div> 
-          </div>
+          */}
+          </div> 
 
-        <div className="counter__days-text">
+        {/* <div className="counter__days-text">
           <div className="counter__days-contain">
             <p>DÍAS</p>
           </div>
@@ -111,7 +123,7 @@ const Counter = () => {
           <div className="counter__min-contain">
             <p>MINUTOS</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="counter__button">
           <NavLink exact to="/registro" >Registro</NavLink>
