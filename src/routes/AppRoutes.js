@@ -20,9 +20,7 @@ export const AppRoutes= () => {
                     <Route exact path="/mapa" component={ Molitalia } />
 
                     <Route exact path="/registro" component={ Register } />
-                    
-                   
-                  <Route exact path="/contador" component={ Counter } />
+                    <Route exact path="/contador" component={ Counter } />
 
                   <Redirect to="/contador" />
 

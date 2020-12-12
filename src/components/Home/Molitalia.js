@@ -53,7 +53,23 @@ export const Molitalia = () => {
     const url = () =>{
     
        window.open("http://magicanavidad.molitalia.com.pe/index_juegos.html", "_blank");
-    } 
+    }
+    
+    const url02 = () => {
+        window.open("https://www.youtube.com/watch?v=mFW7SKgtjdE&feature=youtu.be", "_blank");
+    }
+
+    const url24 = () => {
+        window.open("https://www.youtube.com/watch?v=twk6eEUoeAQ&feature=youtu.be", "_blank");
+    }
+
+    const url57 = () => {
+        window.open("https://www.youtube.com/watch?v=E01OmPxb4wM&feature=youtu.be", "_blank");
+    }
+
+    const url812 = () => {
+        window.open("https://www.youtube.com/watch?v=DwzdXjezp8Y&feature=youtu.be", "_blank");
+    }
 
     useEffect( () => {
         closeWithTime();
@@ -70,7 +86,8 @@ export const Molitalia = () => {
             {/* Green building */}
             <div className="molitalia__5-7">
                 <div className="img__5-7">
-                    <img id="57" alt="5-7 Años" src={ GreenBuilding } width="120" />
+                    <img id="57" alt="5-7 Años" src={ GreenBuilding } width="120" 
+                    onClick={ url57 } />
                 </div>
 
                 <div className="img__whiteToy">
@@ -90,7 +107,8 @@ export const Molitalia = () => {
             {/* Blue building */}
             <div className="molitalia__0-2">
                 <div className="img__0-2">
-                    <img id="02" alt="0-2 Años" src={ BlueBuilding } width="120"  />
+                    <img id="02" alt="0-2 Años" src={ BlueBuilding } width="120" 
+                    onClick={ url02 }  />
                 </div>
 
                 <div className="img__bear">
@@ -121,7 +139,8 @@ export const Molitalia = () => {
             {/*Brown Building  */}
             <div className="molitalia__8-11" >
                 <div className="img__8-11" >
-                    <img id="811" alt="LOGO" width="120" src={ BrownBuilding } />
+                    <img id="811" alt="LOGO" width="120" src={ BrownBuilding } 
+                    onClick={ url812 } />
                 </div>
                 <div className="img__reno" >
                     <img alt="LOGO" width="120" src={ Reno } />
@@ -140,7 +159,8 @@ export const Molitalia = () => {
             {/* Pink Building */}
             <div className="molitalia__2-4">
                 <div className="img__2-4" >
-                    <img id="24" alt="LOGO" src={ PinkBuilding } width="100" height="200" />
+                    <img id="24" alt="LOGO" src={ PinkBuilding } width="100" height="200" 
+                    onClick={ url24 } />
                 </div>
                 <div className="img__elfo3"  >
                     <img alt="LOGO" width="90" src={ Elfo3 } />

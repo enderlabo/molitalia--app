@@ -766,7 +766,7 @@
 }
 
 @media screen and (min-width: 375px) and ( max-width: 413px ) {
-
+    
     .counter__days-text {
         grid-column: 2/3;
         display: flex;
@@ -870,6 +870,7 @@
     }
 }
 
+
 @media screen and (min-width: 375px) and (min-height: 812px) {
 
     .counter__days-text {
@@ -957,6 +958,132 @@
     .img__border {
         position: absolute;
         bottom: 230px;
+        left: 60px;
+    }
+
+    .img__border img {
+        height: 80px;
+        width: auto;
+    
+    }
+
+    .counter__button {
+        position: relative;
+        left: 40px;
+        top: -50px;
+    }
+}
+
+@media screen and (min-width: 393px) and (min-height: 851px) {
+
+    .counter__container {
+
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: ; */
+        /* justify-items: center;
+        align-items: center; */
+        
+        font-family: 'Montserrat', sans-serif;
+    
+        font-family: 'Noto Sans JP', sans-serif;
+    
+        font-family: 'Rubik', sans-serif;
+        color: #FFF;
+    
+        background-image: url('/src/assets/background-countertime.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    .counter__days-text {
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 20px;
+        margin-left: -35px;
+        margin-bottom: 60px;
+    }
+
+    .counter__img-contain img {
+        margin-bottom: 10px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .counter__days p {
+        margin: 0 30px;
+        text-shadow: 0 0 8px #FFF;
+        font-size: 36px;
+        margin-bottom: 215px;
+        
+    }
+    
+
+    .counter__days-text p {
+        margin: 0 20%;
+        font-size: 12px;
+        margin-top: -320%;
+        margin-bottom: -30%;
+    }
+
+    .img__character {
+        position: absolute;
+        bottom: 290px;
+        left: -93px;
+    }
+
+    .img__character img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character3 {
+        position: absolute;
+        bottom: 300px;
+        left: 5px;
+    }
+    .img__character3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__character2 {
+        position: absolute;
+        bottom: 300px;
+        left: 100px;
+    }
+
+    .img__border3 {
+        position: absolute;
+        bottom: 245px;
+        right: 100px;
+    }
+
+    .img__border3 img {
+        height: 80px;
+        width: auto;
+    }
+
+    .img__border2 {
+        position: absolute;
+        bottom: 245px;
+        left: -30px;
+    }
+
+    .img__border2 img {
+        height: 80px;
+        width: auto;
+    }
+     
+    .img__border {
+        position: absolute;
+        bottom: 245px;
         left: 60px;
     }
 
