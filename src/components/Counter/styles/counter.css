@@ -1233,18 +1233,19 @@
 
     .img__character2 {
         position: absolute;
-        bottom: 120px;
-        left: 280px;
+        bottom: 115px;
+        left: 287px;
     }
 
     .img__character2 img {
         width: 80px;
+        height: auto;
     }
 
     .img__character3 {
         position: absolute;
         bottom: 115px;
-        left: 80px;
+        left: 90px;
     }
     .img__character3 img {
         width: 80px;
@@ -1284,7 +1285,7 @@
     .img__border3 {
         position: absolute;
         bottom: 55px;
-        right: 55px;
+        right: 47px;
     }
 
     .img__border3 img {
