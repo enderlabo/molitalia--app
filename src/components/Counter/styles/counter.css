@@ -125,6 +125,7 @@
     grid-column: 2/3;
     grid-row: 3/4;
     bottom: 65px;
+    margin-right: -15px;
 
     
 }
