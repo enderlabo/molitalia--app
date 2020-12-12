@@ -435,8 +435,8 @@
 @media screen and (min-width: 375px) and (min-height: 667px) {
 
     .counter__container {
-        width: 120vw;
-        height: 120vh;
+        width: 135vw;
+        height: 135vh;
     }
 
     .counter__days-text {
@@ -595,8 +595,8 @@
 @media screen and (min-width: 375px) and (min-height: 812px) {
 
     .counter__container {
-        width: 135vw;
-        height: 135vh;
+        width: 141vw;
+        height: 141vh;
     }
 
     .counter__days-text {
@@ -736,8 +736,8 @@
 
     .counter__button {
         position: relative;
-        left: 5px;
-        top: -80px;
+        left: -35px;
+        top: -105px;
     }
 }
 
@@ -878,7 +878,7 @@
         width: 450px;
         height: 260px;
         margin-bottom: 160px;
-        margin-right: 65px;
+        margin-right: 75px;
     }
 
     .counter__days {
@@ -887,7 +887,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 75px;
+        margin-right: 85px;
     }
 
     .counter__days-text {
@@ -938,9 +938,9 @@
     }
 
     .counter__days p {
-        margin: 0px 35px;
+        margin: 0px 40px;
         text-shadow: 0 0 8px #FFF;
-        font-size: 36px;
+        font-size: 46px;
         margin-bottom: 10px;
         margin-top: -380px;
         
@@ -1019,8 +1019,8 @@
     }
 
     .counter__button {
-        top: -60px;
-        left: 10px;
+        top: -70px;
+        left: 5px;
     }
 
 }
@@ -1028,10 +1028,12 @@
 @media screen and (min-width: 768px) and (min-height: 1024px) {
 
     .counter__days p {
-        margin: 0 8%;
+        margin: 0px 55px;
         text-shadow: 0 0 8px #FFF;
         font-size: 46px;
-        margin-bottom: 115px;
+        margin-bottom: 135px;
+        position: relative;
+        bottom: 150px;
         
     }
 
@@ -1045,9 +1047,10 @@
         align-self: start;
     }
     .counter__img-contain img {
-        width: 550px;
-        height: 350px;
+        width: 650px;
+        height: 450px;
         margin-top: 25px;
+        margin-right: 120px;
     }
 
     .counter__border-contain {
@@ -1059,8 +1062,8 @@
         position: relative;
         grid-column: 2/3;
         grid-row: 3/4;
-        bottom: 60px;
-        right: 15px;
+        bottom: 225px;
+        right: 55px;
     }
 
     .counter__border-contain img {
@@ -1168,8 +1171,8 @@
 
     .counter__button {
         position: relative;
-        top: -85px;
-        left: 40px;
+        top: -125px;
+        left: -15px;
     }
 
 }
