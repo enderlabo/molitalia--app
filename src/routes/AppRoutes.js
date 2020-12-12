@@ -17,18 +17,14 @@ export const AppRoutes= () => {
                 {/* Protected routes with Auth */}
                 {/* {
                   isLoggedIn ? ( */}
-                    <HashRouter basename="https://magicanavidad.molitalia.com.pe"
-                     exact path="/mapa" component={ Molitalia } />
+                    <Route exact path="/mapa" component={ Molitalia } />
 
-                    <HashRouter basename="https://magicanavidad.molitalia.com.pe"
-                     exact path="/registro" component={ Register } />
+                    <Route exact path="/registro" component={ Register } />
                     
                    
-                  <HashRouter basename="https://magicanavidad.molitalia.com.pe"
-                   exact path="/contador" component={ Counter } />
+                  <Route exact path="/contador" component={ Counter } />
 
-                  <HashRouter basename="https://magicanavidad.molitalia.com.pe"
-                   to="/contador" />
+                  <Redirect to="/contador" />
 
             </Switch>
           </div>
