@@ -421,6 +421,15 @@
         grid-row: 2/3;
         position: relative;
     }
+    .img__LogoM {
+        position: absolute;
+        top: 235px;
+        left: -100px;
+    }
+    .img__LogoM img {
+        width: 75px;
+        height: 35px;
+    }
 
     .img__games {
         position: absolute;
@@ -710,6 +719,16 @@
     .molitalia__games {
         grid-row: 2/3;
         position: relative;
+    }
+
+    .img__LogoM {
+        position: absolute;
+        top: 200px;
+        left: -100px;
+    }
+    .img__LogoM img {
+        width: 75px;
+        height: 35px;
     }
 
     .img__games {
@@ -1003,6 +1022,16 @@
     .img__games img {
         width: 65px;
         height: 110px;
+    }
+
+    .img__LogoM {
+        position: absolute;
+        top: 270px;
+        left: -105px;
+    }
+    .img__LogoM img {
+        width: 75px;
+        height: 35px;
     }
 
     .img__elf2 {
@@ -1494,7 +1523,7 @@
 
     .img__5-7 {
         display: absolute;
-        left: 70px;
+        left: 85px;
         bottom: 80px;
     }
     .img__5-7 img {
@@ -1505,8 +1534,8 @@
     .img__whiteToy {
         grid-row: 2/3;
         display: absolute;
-        top: 65px;
-        left: 35px;
+        top: 30px;
+        left: 45px;
     }
     .img__whiteToy img {
         top: 30px;
@@ -1517,8 +1546,8 @@
     .img__redBanner {
         grid-row: 2/3;
         display: absolute;
-        top: 40px;
-        left: 132px;
+        top: 35px;
+        left: 147px;
     }
     .img__redBanner img {
         height: 32px;
@@ -1569,12 +1598,22 @@
 
     .img__games {
         position: absolute;
-        top: 45px;
+        top: 50px;
         right: 130px;
     }
     .img__games img {
         width: 65px;
         height: 100px;
+    }
+
+    .img__LogoM {
+        position: absolute;
+        top: 240px;
+        left: -105px;
+    }
+    .img__LogoM img {
+        width: 75px;
+        height: 35px;
     }
 
     .img__elf2 {

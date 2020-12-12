@@ -80,8 +80,8 @@
 .auth__img-elf2 {
     
     position: absolute;
-    top: -10px;
-    left: 500px;
+    top: -11px;
+    left: 510px;
 }
 
 .auth__img-elf2 img {
@@ -424,19 +424,20 @@
         grid-row: 1/3;
         position: relative;
         top: 80px;
-        right: 20px;
+        left: -40px;
+        margin-bottom: 190px;
         
     }
 
     .auth__img-contain img {
-        width: 500px;
-        height: 350px;
+        width: 550px;
+        height: 400px;
     }
 
     .auth__img-elf2 {
         position: relative;
-        top: 93px;
-        left: 90px;
+        top: 150px;
+        left: 100px;
     }
 
     .auth__img-elf2 img {
@@ -463,6 +464,6 @@
 
     .register__button {
         bottom: 80px;
-        left: 30px;
+        left: -30px;
     }
 }
