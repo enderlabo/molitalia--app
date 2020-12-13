@@ -22,9 +22,7 @@ import Guy from '../../assets/PNG/Recurso 17.png';
 import Guy2 from '../../assets/PNG/niña.png';
 import Fanny from '../../assets/PNG/Fanny.png'; 
 import LogoM from '../../assets/PNG/Recurso 9.png';
-
 import Modal from 'react-modal';
-//import ReactPlayer from 'react-player';
 import VideoPlayer from 'react-video-js-player'
 import { customModalStyles } from '../../helpers';
 import Video from '../../assets/video/corregir3.mp4';
@@ -35,23 +33,18 @@ Modal.setAppElement('#root')
 
 export const Molitalia = () => {
 
-    //const videoSrc = Video;
-
     const [modalIsOpen,setIsOpen] = useState(true);
-     
       const afterOpenModal = () => {
         // references are now sync'd and can be accessed.
       }
 
       const closeWithTime = () => {
-            setTimeout( () => {
-                
+            setTimeout( () => {  
                 setIsOpen(false);
             }, 138000)
       }
-
+      //Url's
     const url = () =>{
-    
        window.open("http://magicanavidad.molitalia.com.pe/index_juegos.html", "_blank");
     }
     
@@ -62,11 +55,9 @@ export const Molitalia = () => {
     const url24 = () => {
         window.open("https://www.youtube.com/watch?v=twk6eEUoeAQ&feature=youtu.be", "_blank");
     }
-
     const url57 = () => {
         window.open("https://www.youtube.com/watch?v=E01OmPxb4wM&feature=youtu.be", "_blank");
     }
-
     const url812 = () => {
         window.open("https://www.youtube.com/watch?v=DwzdXjezp8Y&feature=youtu.be", "_blank");
     }
@@ -193,11 +184,7 @@ export const Molitalia = () => {
                 onRequestClose={closeWithTime}
                 style={customModalStyles}
                 contentLabel="Example Modal"
-        >
- 
-          {/* <h2 ref={_subtitle => (subtitle = _subtitle)}>Bienvenido a Molitalia</h2> */}
-          
-         
+        >  
          <VideoPlayer 
             width="850px"
             height="550px"

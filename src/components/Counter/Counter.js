@@ -55,30 +55,22 @@ const Counter = () => {
         <div className="counter__img-contain">
            <img src={Logo} alt="LOGO" width="550" height="350" />
         </div>
-      {/* {
-        hours.length > 0 ?(
-          <div className="counter__days">
-          <p>{days}</p>
-            <p id="hours">{hours}</p>
-          <p>{minutes}</p> 
-      </div>
-        ) : (  <div className="counter__days">
-        <p>BIENVENIDOS</p>
-    </div> )
-      } */}
      
-          <div className="counter__days">
+          {/* <div className="counter__days">
               <p>{days}</p>
                 <p id="hours">{hours}</p>
               <p>{minutes}</p> 
+          </div> */}
+          <div className="counter__days">
+            <p>BIENVENIDOS</p>
           </div>
 
-        <div className="counter__border-contain">
+        {/* <div className="counter__border-contain">
 
           <div className="counter__contain2">
             <img src={ Contador } alt="CONTADOR" width="450" />
          
-          </div>
+          </div> */}
 
           
         {/* 
@@ -107,7 +99,7 @@ const Counter = () => {
               <img alt="Reno" src={ Reno } width="80" />
             </div> 
           */}
-          </div> 
+           {/* </div>   */}
 
         {/* <div className="counter__days-text">
           <div className="counter__days-contain">
