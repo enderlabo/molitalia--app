@@ -435,8 +435,8 @@
 @media screen and (min-width: 375px) and (min-height: 667px) {
 
     .counter__container {
-        width: 135vw;
-        height: 135vh;
+        width: 100vw;
+        height: 100vh;
     }
 
     .counter__days-text {
@@ -455,7 +455,7 @@
         margin-bottom: 10px;
         width: 400px;
         height: 250px;
-        margin-right: 85px;
+        margin-right: 125px;
     }
 
     .counter__days {
@@ -887,7 +887,7 @@
         position: relative;
         align-items: center;
         justify-content: center;
-        margin-right: 85px;
+        margin-right: 70px;
     }
 
     .counter__days-text {
@@ -938,7 +938,7 @@
     }
 
     .counter__days p {
-        margin: 0px 40px;
+        margin: 0px 35px;
         text-shadow: 0 0 8px #FFF;
         font-size: 46px;
         margin-bottom: 10px;
