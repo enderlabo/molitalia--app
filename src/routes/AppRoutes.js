@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import  Counter from '../components/Counter/Counter';
 import { Register } from '../components/Auth/Register';
 import { Molitalia } from '../components/Home/Molitalia';
-import CounterBack from '../components/Counter/counterback';
 
 
 export const AppRoutes= () => {
