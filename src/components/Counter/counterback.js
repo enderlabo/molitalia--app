@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Logo from '../../assets/KV.png';
+import Esfera from '../../assets/esfera.png';
+import Pinguino from '../../assets/personaje1.png';
+import Elfo from '../../assets/personaje2.png';
+import Reno from '../../assets/personaje3.png';
 import Molitalia from '../../assets/logo-molitalia.png';
 import Contador from '../../assets/contador.png';
 
