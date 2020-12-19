@@ -220,7 +220,59 @@
         left: 70px;
     }
 } */
-@media (min-width: 360px) and (min-height: 740px)  {
+
+@media (min-width: 320px) {
+
+    .auth__container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    .auth__img-contain {
+        margin-left: 0px;
+        grid-column: 1/3;
+        position: relative;
+        right: 5%;
+    }
+
+    .auth__img-contain img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .auth__img-elf img {
+        display: none;
+    }
+
+    .auth__register {
+        width: 200px;
+
+    }
+
+    .auth__img-elf2 {
+        display: none;
+    }
+
+    .auth__ugly-contain {
+        width: 300px;
+    }
+
+    .auth__container form {
+        margin-bottom: 20%;
+        width: 300px;
+        margin-left: -60px;
+    }
+
+    .register__button {
+        bottom: 35px;
+        left: -55px;
+    }
+
+
+}
+
+@media (min-width: 360px) {
 
     .auth__container {
         width: 100vw;
@@ -271,7 +323,7 @@
 
 }
 
-@media (min-width: 375px) and ( min-height:812px ) {
+@media (min-width: 375px) {
 
     .auth__img-contain {
         grid-column: 1/3;
@@ -318,7 +370,7 @@
 
 }
 
-@media (min-width: 375px) and (min-height: 667px)  {
+@media (min-width: 375px) {
 
 
     .auth__img-contain {
@@ -366,7 +418,7 @@
 
 
 
-@media (min-width: 414px) and (min-height: 736px)  {
+@media (min-width: 414px)  {
 
 
     .auth__img-contain {
@@ -417,7 +469,7 @@
 
 }
 
-@media (min-width: 768px) and (min-height: 1024px) { 
+@media (min-width: 768px) { 
 
     .auth__img-contain {
         grid-column: 2/3;
@@ -467,3 +519,14 @@
         left: -30px;
     }
 }
+
+
+@media (min-width: 1280px) {
+    .auth__img-contain {
+        position: relative;
+        top: 80px;
+        left: -40px;
+        margin-bottom: 190px;
+        
+    }
+} 

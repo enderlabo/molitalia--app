@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Logo from '../../assets/KV.png';
 import Logo2 from '../../assets/logo-molitalia.png';
 import WhiteToy from '../../assets/PNG/Recurso 15.png';
@@ -23,7 +23,7 @@ import Guy2 from '../../assets/PNG/niña.png';
 import Fanny from '../../assets/PNG/Fanny.png'; 
 import LogoM from '../../assets/PNG/Recurso 9.png';
 import Modal from 'react-modal';
-import VideoPlayer from 'react-video-js-player'
+import VideoPlayer from 'react-video-js-player';
 import { customModalStyles } from '../../helpers';
 import Video from '../../assets/video/corregir3.mp4';
 
@@ -38,11 +38,20 @@ export const Molitalia = () => {
         // references are now sync'd and can be accessed.
       }
 
-      const closeWithTime = () => {
+      /*const closeWithTime = () => {
             setTimeout( () => {  
                 setIsOpen(false);
             }, 138000)
+      }*/
+
+      function closeModal() {
+          setIsOpen(false);
       }
+
+      function closeDummy() {
+        
+    }
+
       //Url's
     const url = () =>{
        window.open("http://magicanavidad.molitalia.com.pe/index_juegos.html", "_blank");
@@ -62,9 +71,9 @@ export const Molitalia = () => {
         window.open("https://www.youtube.com/watch?v=DwzdXjezp8Y&feature=youtu.be", "_blank");
     }
 
-    useEffect( () => {
+    /*useEffect( () => {
         closeWithTime();
-    })
+    })*/
         
     return (
         <div className="map__contain animate__animated animate__fadeIn">
@@ -181,7 +190,8 @@ export const Molitalia = () => {
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
-                onRequestClose={closeWithTime}
+                onRequestClose={closeDummy}
+                shouldCloseOnOverlayClick={false}
                 style={customModalStyles}
                 contentLabel="Example Modal"
         >  
@@ -191,6 +201,7 @@ export const Molitalia = () => {
             src={ Video }
             onPlay="true"
             autoplay="true"
+            onEnd={closeModal}
          />
         </Modal>
         </div>
